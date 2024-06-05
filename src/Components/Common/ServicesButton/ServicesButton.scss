@@ -1,0 +1,20 @@
+@use '../../../index.scss' as i;
+
+.ServicesButton {
+    padding: 20px;
+    width: fit-content;
+    margin: 0px 10px;
+    border-radius: 8px;
+    transition: 300ms;
+    text-decoration: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    @include i.secondary_color_background;
+    border: 1px solid i.$tertiary_color;
+    @include i.tertiary_color_text;
+    font-size: .5rem;
+
+    &:hover {
+        @include i.primary_color_background;
+        @include i.secondary_color_text;
+    }
+}

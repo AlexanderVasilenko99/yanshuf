@@ -1,0 +1,13 @@
+@use "../../index.scss" as i;
+
+
+.ParallaxSection {
+    @include i.secondary_color_background;
+    height: 75vh;
+    background-image: url('../../Assets/Images/mountains.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

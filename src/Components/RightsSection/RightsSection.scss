@@ -1,0 +1,9 @@
+@use '../../index.scss' as i;
+
+.RightsSection {
+    @include i.primary_color_background;
+    @include i.secondary_color_text;
+    font-size: .4rem;
+    padding-bottom: 5px;
+    height: fit-content;
+}

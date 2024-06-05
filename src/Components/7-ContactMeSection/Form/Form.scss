@@ -1,0 +1,83 @@
+@use "../../../index.scss" as i;
+
+Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    >div {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .single-input {
+        display: flex;
+        flex-direction: column;
+        font-size: .6rem;
+        margin: 10px;
+
+        label {
+            text-align: left;
+        }
+
+        input {
+            height: .6rem;
+            border-radius: 8px;
+            border: 2px solid i.$tertiary_color;
+
+            &::first-line {
+                color: i.$primary_color;
+                font-size: .4rem;
+            }
+        }
+    }
+
+    button {
+        font-size: .5rem;
+        margin: 15px 0px 0px 0px;
+        border-radius: 8px;
+        @include i.tertiary_color_background;
+        @include i.secondary_color_text;
+        padding: 2px 16px;
+        border: 2px solid i.$secondary_color;
+        transition: 200ms all;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+        &:hover {
+            cursor: pointer;
+            @include i.secondary_color_background;
+            @include i.tertiary_color_text;
+            scale: 1.05;
+            border: 2px solid i.$tertiary_color;
+        }
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    Form {
+        >div {
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .single-input {
+                padding: 0px 25vw;
+
+                input {
+                    height: 50px;
+
+                    &::first-line {
+                        color: i.$primary_color;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        button {
+            width: 25vw;
+            height: 60px;
+            margin: 20px 0px;
+        }
+    }
+}
