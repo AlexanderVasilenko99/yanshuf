@@ -3,7 +3,8 @@ import "./RightsSection.scss";
 function RightsSection(): JSX.Element {
     return (
         <div className="RightsSection">
-			©Alexander Vasilenko Portfolio Website. All rights reserved.
+            <span>©Yanshuf books ltd. All rights reserved.</span>
+            <span>Made possible by Alexander Vasilenko.</span>
         </div>
     );
 }
