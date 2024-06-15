@@ -1,12 +1,12 @@
-import "./RightsSection.scss";
+import "./Footer.scss";
 
-function RightsSection(): JSX.Element {
+function Footer(): JSX.Element {
     return (
-        <div className="RightsSection">
+        <div className="Footer">
             <span>©Yanshuf books ltd. All rights reserved.</span>
             <span>Made possible by Alexander Vasilenko.</span>
         </div>
     );
 }
 
-export default RightsSection;
+export default Footer;

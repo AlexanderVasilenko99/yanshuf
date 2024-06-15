@@ -1,6 +1,6 @@
 @use '../../index.scss' as i;
 
-.RightsSection {
+.Footer {
     @include i.primary_color_background;
     @include i.secondary_color_text;
     display: flex;
