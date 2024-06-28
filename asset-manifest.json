@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/yanshuf/static/css/main.9a1a65dd.css",
-    "main.js": "/yanshuf/static/js/main.db154b4b.js",
+    "main.js": "/yanshuf/static/js/main.6400ca75.js",
     "index.html": "/yanshuf/index.html",
     "main.9a1a65dd.css.map": "/yanshuf/static/css/main.9a1a65dd.css.map",
-    "main.db154b4b.js.map": "/yanshuf/static/js/main.db154b4b.js.map"
+    "main.6400ca75.js.map": "/yanshuf/static/js/main.6400ca75.js.map"
   },
   "entrypoints": [
     "static/css/main.9a1a65dd.css",
-    "static/js/main.db154b4b.js"
+    "static/js/main.6400ca75.js"
   ]
 }
