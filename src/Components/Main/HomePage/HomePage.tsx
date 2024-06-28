@@ -1,12 +1,11 @@
-import "./FirstSection.scss";
+import "./HomePage.scss";
 
-function FirstSection(): JSX.Element {
+function HomePage(): JSX.Element {
     return (
-        <div className="FirstSection" id="/#">
-            <h1>Yanshuf books</h1>
-            <h1>Under construction</h1>
-        </div >
+        <div className="HomePage">
+            <span>HomePage</span>
+        </div>
     );
 }
 
-export default FirstSection;
+export default HomePage;

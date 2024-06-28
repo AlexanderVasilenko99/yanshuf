@@ -5,7 +5,7 @@
     position: fixed;
     width: 100vw;
     font-size: .8rem;
-    height: 65px;
+    height: 7.5vh;
     top: 0px;
     display: flex;
     justify-content: center;
@@ -79,26 +79,26 @@
                 }
             }
 
+            // LOGO:
+            // &:nth-child(4) {
+            //     overflow: visible;
 
-            &:nth-child(4) {
-                overflow: visible;
+            //     a {
+            //         padding: 0;
+            //         display: flex;
+            //         justify-content: center;
+            //         align-items: center;
 
-                a {
-                    padding: 0;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+            //         &:before {
+            //             border: 0;
+            //         }
+            //     }
 
-                    &:before {
-                        border: 0;
-                    }
-                }
-
-                img {
-                    width: 45px;
-                    margin: 0px 10px;
-                }
-            }
+            //     img {
+            //         width: 45px;
+            //         margin: 0px 10px;
+            //     }
+            // }
 
         }
     }
