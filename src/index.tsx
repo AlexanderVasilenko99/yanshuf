@@ -13,7 +13,7 @@ document.title = "Yanshuf Books";
 
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/yanshuf'>
       <Navbar />
       <Router />
       <Footer />
