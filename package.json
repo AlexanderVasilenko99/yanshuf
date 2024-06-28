@@ -2,7 +2,7 @@
   "homepage": "https://alexandervasilenko99.github.io/yanshuf",
   "name": "yanshuf",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@formspree/react": "^2.5.1",
     "@testing-library/jest-dom": "^5.17.0",
