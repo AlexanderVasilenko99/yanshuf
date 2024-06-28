@@ -1,6 +1,6 @@
 {
-  "homepage": ".",
-  "name": "portfolio-website",
+  "homepage": "https://alexandervasilenko99.github.io/yanshuf",
+  "name": "yanshuf",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
