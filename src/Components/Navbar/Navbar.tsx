@@ -1,6 +1,7 @@
 // import { HashLink } from 'react-router-hash-link';
-import "./Navbar.scss";
 import { NavLink } from 'react-router-dom';
+import "./Navbar.scss";
+import appConfig from '../../Utils/AppConfig';
 
 function Navbar(): JSX.Element {
     // useEffect(() => {
@@ -15,13 +16,14 @@ function Navbar(): JSX.Element {
     return (
         <div className="Navbar" id='navbar'>
             <ul>
+                <li><NavLink to={appConfig.homePage}>Yanshuf</NavLink></li>
+                <li><NavLink to={appConfig.booksPage}>Books</NavLink></li>
+                <li><NavLink to={appConfig.aboutPage}>About</NavLink></li>
                 {/* <li><HashLink smooth to="#about">About</HashLink></li>
                 <li><HashLink smooth to="#services">Services</HashLink></li>
                 <li><HashLink smooth to="#portfolio">Portfolio</HashLink></li>
                 <li><HashLink smooth to="#recommendations">Recommendations</HashLink></li>
                 <li><HashLink smooth to="#contact">Contact</HashLink></li> */}
-                <li><NavLink to={'home'}>Yanshuf</NavLink></li>
-                <li><NavLink to={'books'}>Books</NavLink></li>
             </ul>
         </div>
     );

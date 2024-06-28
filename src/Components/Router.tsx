@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import HomePage from "./Main/HomePage/HomePage";
 import './Routing.scss'
 import Books from "./Main/Books/Books";
+import About from "./Main/About/About";
+import appConfig from "../Utils/AppConfig";
 
 function Routing(): JSX.Element {
     return (
@@ -9,8 +11,9 @@ function Routing(): JSX.Element {
             <Routes>
                 {/* Default Route */}
                 <Route path="/" element={<Navigate to={"/home"} />}></Route>
-                <Route path="/home/" element={<HomePage />} />
-                <Route path="/books/" element={<Books />} />
+                <Route path={appConfig.homePage} element={<HomePage />} />
+                <Route path={appConfig.booksPage} element={<Books />} />
+                <Route path={appConfig.aboutPage} element={<About />} />
                 {/* <Route path="/vacations/" element={<VacationsList />} />
                 <Route path="/vacations/new" element={<AddVacation />} />
                 <Route path="/vacations/:uuid" element={<VacationPage />} />
