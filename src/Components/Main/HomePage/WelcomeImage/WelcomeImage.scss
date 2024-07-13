@@ -1,0 +1,10 @@
+@use '../../../../index.scss' as i;
+
+.WelcomeImage {
+    box-sizing: border-box;
+    overflow: hidden;
+    img{
+        padding: 0px 100px;
+        width: 100%;
+    }
+}

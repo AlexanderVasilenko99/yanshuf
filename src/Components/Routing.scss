@@ -1,0 +1,7 @@
+@use '../index.scss' as i;
+
+.Routing {
+    @include i.secondary_color_background;
+    box-sizing: border-box;
+    overflow: hidden;
+}

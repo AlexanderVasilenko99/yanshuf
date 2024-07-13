@@ -1,0 +1,7 @@
+@use '../../../../index.scss' as i;
+
+.BookLine {
+background-color: red;
+display: flex;
+justify-content: space-between;
+}

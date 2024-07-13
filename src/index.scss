@@ -1,0 +1,58 @@
+:root {
+  font-size: 40px;
+  font-size: clamp(20px, 5vw, 40px);
+}
+
+$primary_color: #9B4819;
+$primary_color2: #314028;
+$secondary_color: white;
+$tertiary_color: #BD8F53;
+
+html,
+body,
+body * {
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  max-width: 900px;
+  margin: 0 auto 0;
+}
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@mixin primary_color_text {
+  color: $primary_color;
+}
+
+@mixin primary_color_background {
+  background-color: $primary_color;
+}
+
+@mixin primary_color2_text {
+  color: $primary_color2;
+}
+
+@mixin primary_color2_background {
+  background-color: $primary_color2;
+}
+
+@mixin secondary_color_text {
+  color: $secondary_color;
+}
+
+@mixin secondary_color_background {
+  background-color: $secondary_color;
+}
+
+@mixin tertiary_color_text {
+  color: $tertiary_color;
+}
+
+@mixin tertiary_color_background {
+  background-color: $tertiary_color;
+}

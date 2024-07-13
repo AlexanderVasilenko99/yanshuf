@@ -1,0 +1,9 @@
+@use '../../../index.scss' as i;
+
+.HomePage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    font-weight: 600;
+}
