@@ -1,12 +1,10 @@
+import { BookLineInterface } from "../../../../Interfaces/BookLineInterface";
 import BookModel from "../../../../Models/BookModel";
 import Book from "../Book/Book";
 import "./BookLine.scss";
 
-interface BookLineProps {
-    books: BookModel[];
-}
 
-function BookLine(data: BookLineProps): JSX.Element {
+function BookLine(data: BookLineInterface): JSX.Element {
     const books = data.books;
 
     return (

@@ -1,10 +1,14 @@
 import BookModel from "../../../../Models/BookModel";
 import "./Book.scss";
 
-function Book(book:BookModel): JSX.Element {
+function Book(book: BookModel): JSX.Element {
+    console.log(book.image_name);
+
     return (
         <div className="Book">
-            {book.name}
+            <img src={require(`../../../../Assets/Images/` + book.image_name)} />
+            <span className="title">{book.name}</span>
+            <span className="author">by {book.author}</span>
         </div>
     );
 }
