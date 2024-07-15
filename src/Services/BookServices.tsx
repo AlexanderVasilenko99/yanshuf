@@ -8,12 +8,12 @@ class BookServices {
         const books: BookModel[] = response.data;
         return books;
     }
-    public async getBestsellers(): Promise<BookModel[]> {
-        const response = await axios.get<BookModel[]>(appConfig.booksFetchURL);
+    public async getPicksOfTheMonth(): Promise<BookModel[]> {
+        const response = await axios.get<BookModel[]>(appConfig.picksOfTheMonthFetchURL);
         const books: BookModel[] = response.data;
         return books;
     }
-    public async getPicksOfTheMonth(): Promise<BookModel[]> {
+    public async getBestsellers(): Promise<BookModel[]> {
         const response = await axios.get<BookModel[]>(appConfig.booksFetchURL);
         const books: BookModel[] = response.data;
         return books;
