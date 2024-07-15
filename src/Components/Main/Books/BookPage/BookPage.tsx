@@ -3,11 +3,16 @@ import "./BookPage.scss";
 
 function BookPage(): JSX.Element {
     const params = useParams();
-    
+
 
     return (
         <div className="BookPage">
-            <span>BookPage {params.bookId}</span>
+            <div className="initialInfo">
+                <div>
+                {params.bookIdentifier}
+                </div>
+                <div>yo</div>
+            </div>
         </div>
     );
 }

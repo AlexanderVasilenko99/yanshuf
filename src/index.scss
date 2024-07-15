@@ -1,6 +1,7 @@
 :root {
   font-size: 40px;
   font-size: clamp(20px, 5vw, 40px);
+  margin: 0 auto 0;
 }
 
 $primary_color: #9B4819;
@@ -15,9 +16,9 @@ body * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  width: 100vw;
+  // width: 100vw;
   max-width: 900px;
-  margin: 0 auto 0;
+  // margin: 0 auto 0;
 }
 
 

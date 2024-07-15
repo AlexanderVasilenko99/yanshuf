@@ -6,7 +6,7 @@ function Header(): JSX.Element {
         <div className="Header">
             <span><img src={logo} /></span>
             <span>search</span>
-            <span>creds</span>
+            {/* <span>creds</span> */}
         </div>
     );
 }

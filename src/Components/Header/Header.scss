@@ -1,7 +1,8 @@
 @use '../../index.scss' as i;
 
 .Header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
     span{
