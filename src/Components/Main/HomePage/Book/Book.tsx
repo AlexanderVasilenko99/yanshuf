@@ -4,8 +4,8 @@ import "./Book.scss";
 function Book(book: BookModel): JSX.Element {
     return (
         <div className="Book">
-            <img src={require(`../../../../Assets/Images/` + book.image_name)} />
-            <span className="title">{book.name}</span>
+            <img src={require(`../../../../Assets/Images/` + book.coverImage)} />
+            <span className="title">{book.title}</span>
             <span className="author">by {book.author}</span>
         </div>
     );
