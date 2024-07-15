@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "title": "Killing Floor",
+        "title": "Jack Reacher - Killing Floor",
         "author": "Lee Child",
         "genre": "Thriller",
         "publishedYear": 1997,
@@ -21,7 +21,7 @@
     },
     {
         "id": 2,
-        "title": "Die Trying",
+        "title": "Jack Reacher - Die Trying",
         "author": "Lee Child",
         "genre": "Thriller",
         "publishedYear": 1998,
@@ -41,7 +41,7 @@
     },
     {
         "id": 3,
-        "title": "Tripwire",
+        "title": "Jack Reacher - Tripwire",
         "author": "Lee Child",
         "genre": "Thriller",
         "publishedYear": 1999,
@@ -61,7 +61,7 @@
     },
     {
         "id": 4,
-        "title": "Running Blind",
+        "title": "Jack Reacher - Running Blind",
         "author": "Lee Child",
         "genre": "Thriller",
         "publishedYear": 2000,
@@ -81,7 +81,7 @@
     },
     {
         "id": 5,
-        "title": "Echo Burning",
+        "title": "Jack Reacher - Echo Burning",
         "author": "Lee Child",
         "genre": "Thriller",
         "publishedYear": 2001,
