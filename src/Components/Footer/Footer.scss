@@ -1,13 +1,12 @@
 @use '../../index.scss' as i;
 
 .Footer {
-    @include i.primary_color_background;
-    @include i.secondary_color_text;
+    @include i.primary_color_text;
     font-size: .4rem;
 
-    p {
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
+    // p {
+    //     display: flex;
+    //     justify-content: center;
+    //     position: relative;
+    // }
 }
