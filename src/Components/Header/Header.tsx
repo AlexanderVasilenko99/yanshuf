@@ -1,5 +1,5 @@
 import "./Header.scss";
-import logo from '../../Assets/Images/logo.png'
+import logo from '../../Assets/Images/logo2.png'
 function Header(): JSX.Element {
 
     return (
