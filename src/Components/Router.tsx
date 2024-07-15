@@ -4,6 +4,7 @@ import './Routing.scss'
 import Books from "./Main/Books/Books";
 import About from "./Main/About/About";
 import appConfig from "../Utils/AppConfig";
+import BookPage from "./Main/Books/BookPage/BookPage";
 
 function Routing(): JSX.Element {
     return (
@@ -15,6 +16,7 @@ function Routing(): JSX.Element {
                 <Route path={appConfig.homePage} element={<HomePage />} />
                 <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route>
                 <Route path={appConfig.booksPage} element={<Books />} />
+                <Route path={appConfig.booksPage+"/:bookId"} element={<BookPage />} />
                 <Route path={appConfig.aboutPage} element={<About />} />
                 {/* <Route path="/vacations/" element={<VacationsList />} />
                 <Route path="/vacations/new" element={<AddVacation />} />

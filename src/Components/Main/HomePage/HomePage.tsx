@@ -4,11 +4,11 @@ import "./HomePage.scss";
 import WelcomeImage from "./WelcomeImage/WelcomeImage";
 
 const bestSellers: BookModel[] = [
-    new BookModel("Jack Reacher", "Lee Child", "jack_reacher.jpg"),
-    new BookModel("Jack Reacher", "Lee Child", "jack_reacher.jpg"),
-    new BookModel("Jack Reacher", "Lee Child", "jack_reacher.jpg"),
-    new BookModel("Jack Reacher", "Lee Child", "jack_reacher.jpg"),
-    new BookModel("Jack Reacher", "Lee Child", "jack_reacher.jpg")
+    new BookModel("Jack Reacher - Killing Floor", "Lee Child", "JackReacher-KillingFloor.jpg"),
+    new BookModel("Jack Reacher - Die Trying", "Lee Child", "JackReacher-DieTrying.jpg"),
+    new BookModel("Jack Reacher - Tripwire", "Lee Child", "JackReacher-Tripwire.jpg"),
+    new BookModel("Jack Reacher - Running Blind", "Lee Child", "JackReacher-RunningBlind.jpg"),
+    new BookModel("Jack Reacher - Echo Burning", "Lee Child", "JackReacher-EchoBurning.jpg")
 ]
 
 function HomePage(): JSX.Element {

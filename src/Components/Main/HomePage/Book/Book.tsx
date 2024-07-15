@@ -2,8 +2,6 @@ import BookModel from "../../../../Models/BookModel";
 import "./Book.scss";
 
 function Book(book: BookModel): JSX.Element {
-    console.log(book.image_name);
-
     return (
         <div className="Book">
             <img src={require(`../../../../Assets/Images/` + book.image_name)} />
