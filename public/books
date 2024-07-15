@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "title": "Killing Floor",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 1997,
+        "price": 39.99,
+        "coverImage": "JackReacher-KillingFloor.jpg",
+        "description": "Ex-military policeman Jack Reacher is a drifter. He's just passing through Margrave, Georgia, and in less than an hour, he's arrested for murder. Not much of a welcome. All Reacher knows is that he didn't kill anybody. At least not here. Not lately. But he doesn't stand a chance of convincing anyone. Not a chance in hell.",
+        "rating": 4.2,
+        "publisher": "Jove",
+        "pageCount": 536,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 1
+        },
+        "edition": "Reissue",
+        "releaseDate": "1997-03-17"
+    },
+    {
+        "id": 2,
+        "title": "Die Trying",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 1998,
+        "price": 39.99,
+        "coverImage": "JackReacher-DieTrying.jpg",
+        "description": "Jack Reacher, an ex-military policeman, is kidnapped and finds himself in the middle of a deadly confrontation. With his captors planning something terrible, Reacher must use all his skills to survive.",
+        "rating": 4.3,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 2
+        },
+        "edition": "Reissue",
+        "releaseDate": "1998-07-07"
+    },
+    {
+        "id": 3,
+        "title": "Tripwire",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 1999,
+        "price": 39.99,
+        "coverImage": "JackReacher-Tripwire.jpg",
+        "description": "Jack Reacher's solitary life is interrupted by a stranger's search for him. What starts as a simple case turns into a dangerous mission, involving a conspiracy that threatens everything Reacher holds dear.",
+        "rating": 4.4,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 3
+        },
+        "edition": "Reissue",
+        "releaseDate": "1999-06-28"
+    },
+    {
+        "id": 4,
+        "title": "Running Blind",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2000,
+        "price": 39.99,
+        "coverImage": "JackReacher-RunningBlind.jpg",
+        "description": "Jack Reacher is enlisted to help the FBI track down a serial killer targeting women across the country. As Reacher digs deeper, he discovers a shocking truth that tests his own morality and sense of justice.",
+        "rating": 4.3,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 4
+        },
+        "edition": "Reissue",
+        "releaseDate": "2000-04-24"
+    },
+    {
+        "id": 5,
+        "title": "Echo Burning",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2001,
+        "price": 39.99,
+        "coverImage": "JackReacher-EchoBurning.jpg",
+        "description": "Jack Reacher is hitchhiking through Texas when he is picked up by a troubled woman. Soon, he finds himself embroiled in a web of deceit and danger, facing powerful enemies in the scorching Texas heat.",
+        "rating": 4.5,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 5
+        },
+        "edition": "Reissue",
+        "releaseDate": "2001-06-25"
+    }
+]
