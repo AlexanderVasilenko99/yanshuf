@@ -98,5 +98,105 @@
         },
         "edition": "Reissue",
         "releaseDate": "2001-06-25"
+    },
+{
+        "id": 6,
+        "title": "Without Fail",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2002,
+        "price": 39.99,
+        "coverImage": "JackReacher-WithoutFail.jpg",
+        "description": "Jack Reacher is tasked with protecting the Vice President of the United States. With a deadly assassin on the loose, Reacher must use his skills to prevent an assassination attempt.",
+        "rating": 4.4,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 6
+        },
+        "edition": "Reissue",
+        "releaseDate": "2002-04-23"
+    },
+    {
+        "id": 7,
+        "title": "Persuader",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2003,
+        "price": 39.99,
+        "coverImage": "JackReacher-Persuader.jpg",
+        "description": "Jack Reacher goes undercover to bring down a criminal organization. As he delves deeper, he uncovers secrets that put his life in danger.",
+        "rating": 4.5,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 7
+        },
+        "edition": "Reissue",
+        "releaseDate": "2003-05-13"
+    },
+    {
+        "id": 8,
+        "title": "The Enemy",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2004,
+        "price": 39.99,
+        "coverImage": "JackReacher-TheEnemy.jpg",
+        "description": "Jack Reacher faces off against a conspiracy within the military. With the stakes higher than ever, Reacher must uncover the truth and bring the culprits to justice.",
+        "rating": 4.4,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 8
+        },
+        "edition": "Reissue",
+        "releaseDate": "2004-04-27"
+    },
+    {
+        "id": 9,
+        "title": "One Shot",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2005,
+        "price": 39.99,
+        "coverImage": "JackReacher-OneShot.jpg",
+        "description": "Jack Reacher is called in to investigate a sniper attack that leaves five dead. As he uncovers the truth, he realizes that not everything is as it seems.",
+        "rating": 4.6,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 9
+        },
+        "edition": "Reissue",
+        "releaseDate": "2005-06-14"
+    },
+    {
+        "id": 10,
+        "title": "The Hard Way",
+        "author": "Lee Child",
+        "genre": "Thriller",
+        "publishedYear": 2006,
+        "price": 39.99,
+        "coverImage": "JackReacher-TheHardWay.jpg",
+        "description": "Jack Reacher is drawn into a kidnapping case. As he follows the trail, he discovers that the stakes are higher than he ever imagined.",
+        "rating": 4.5,
+        "publisher": "Jove",
+        "pageCount": 576,
+        "language": "English",
+        "series": {
+            "name": "Jack Reacher",
+            "orderInSeries": 10
+        },
+        "edition": "Reissue",
+        "releaseDate": "2006-05-16"
     }
 ]
