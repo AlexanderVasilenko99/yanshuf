@@ -13,12 +13,10 @@ const root = ReactDOM.createRoot(
 document.title = "Yanshuf Books";
 
 root.render(
-  <React.StrictMode>
-    <BrowserRouter basename='/yanshuf'>
-      <Header />
-      <Navbar />
-      <Router />
-      <Footer />
-    </BrowserRouter >
-  </React.StrictMode>
+  <BrowserRouter basename='/yanshuf'>
+    <Header />
+    <Navbar />
+    <Router />
+    <Footer />
+  </BrowserRouter >
 );

@@ -23,6 +23,12 @@ class BookServices {
         const books: BookModel[] = response.data;
         return books;
     }
+    public async getBookByAuthorAndTitle(search: string): Promise<BookModel> {
+        search = search.replace(/([A-Z])/g, ' $1').replace(/-/g, ' ').replace(/^ /, '').replace('  ', ' ');
+        const books = await this.getBooks();
+        const book = books.find((b: BookModel) => search.includes(b.author) && search.includes(b.title));
+        return book;
+    }
 }
 const bookServices = new BookServices();
 export default bookServices;
