@@ -1,17 +1,16 @@
-@use '../../index.scss' as i;
-
 .Header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     justify-content: center;
     align-items: center;
-    span{
+
+    span {
         display: flex;
         justify-content: center;
         align-items: center;
-        img{
-            width: 75%;
-            // padding: 30px 0px;
+
+        img {
+            width: 100%;
         }
     }
 }

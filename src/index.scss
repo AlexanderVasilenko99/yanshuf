@@ -1,59 +1,30 @@
 :root {
+  --primary-color: #6F4E37;
+  --secondary-color: #A98274;
+  --accent-color: #D7B49E;
+  --background-color: #F5F5DC;
+  --text-color: #3E2723;
+
+
   font-size: 40px;
   font-size: clamp(20px, 5vw, 40px);
   margin: 0 auto 0;
+  background-color: var(--background-color)
 }
 
-$primary_color: #9B4819;
-$primary_color2: #314028;
-$secondary_color: white;
-$tertiary_color: #BD8F53;
-
 html,
-body,
-body * {
+body {
   text-align: center;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  // width: 100vw;
   max-width: 900px;
-  // margin: 0 auto 0;
 }
 
+body * {
+  color: var(--text-color);
+}
 
 ::-webkit-scrollbar {
   display: none;
-}
-
-@mixin primary_color_text {
-  color: $primary_color;
-}
-
-@mixin primary_color_background {
-  background-color: $primary_color;
-}
-
-@mixin primary_color2_text {
-  color: $primary_color2;
-}
-
-@mixin primary_color2_background {
-  background-color: $primary_color2;
-}
-
-@mixin secondary_color_text {
-  color: $secondary_color;
-}
-
-@mixin secondary_color_background {
-  background-color: $secondary_color;
-}
-
-@mixin tertiary_color_text {
-  color: $tertiary_color;
-}
-
-@mixin tertiary_color_background {
-  background-color: $tertiary_color;
 }

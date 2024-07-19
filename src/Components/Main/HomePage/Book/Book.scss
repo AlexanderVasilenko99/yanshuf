@@ -1,12 +1,11 @@
-@use '../../../../index.scss' as i;
-
 .Book {
     box-sizing: border-box;
     width: 140px;
-    height: 280px;
+    height: 288px;
     display: flex;
     flex-direction: column;
-
+    text-decoration: none;
+    transition: 350ms all;
 
     img {
         width: 100%;
@@ -22,4 +21,6 @@
             font-weight: 300;
         }
     }
+
+    &:hover {}
 }

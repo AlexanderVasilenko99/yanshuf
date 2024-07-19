@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
+import logo from '../../Assets/Images/logo2.png';
+import appConfig from "../../Utils/AppConfig";
 import "./Header.scss";
-import logo from '../../Assets/Images/logo2.png'
 function Header(): JSX.Element {
 
     return (
         <div className="Header">
-            <span><img src={logo} /></span>
+            <span><NavLink to={appConfig.homePage}><img src={logo} /></NavLink></span>
             <span>search</span>
             {/* <span>creds</span> */}
         </div>

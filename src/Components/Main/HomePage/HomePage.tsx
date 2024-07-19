@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import BookModel from "../../../Models/BookModel";
+import bookServices from "../../../Services/BookServices";
 import BookLine from "./BookLine/BookLine";
 import "./HomePage.scss";
 import WelcomeImage from "./WelcomeImage/WelcomeImage";
-import bookServices from "../../../Services/BookServices";
 
 
 function HomePage(): JSX.Element {
