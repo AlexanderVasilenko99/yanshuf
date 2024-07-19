@@ -7,7 +7,7 @@ function Book(book: BookModel): JSX.Element {
 
     return (
         <NavLink to={(`${appConfig.booksPage}/${book.author}-${book.title}`).split(' ').join('')} className="Book">
-            <img src={require(`../../../../Assets/Images/` + book.coverImage)} />
+            <img src={require(`../../../../Assets/Images/BookCovers/` + book.coverImage)} />
             <span className="title">{book.series.name ? `${book.series.name} - ` : ''}{book.title}</span>
             <span className="author">by {book.author}</span>
         </NavLink>

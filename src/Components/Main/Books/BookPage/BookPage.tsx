@@ -19,8 +19,7 @@ function BookPage(): JSX.Element {
         <div className="BookPage">
             <div className="initialInfo">
                 <div>
-                    {book && <img src={require(`../../../../Assets/Images/` + book.coverImage)} />}
-                    {/* <img src={require("../../../../../Assets/Images/Fleet/Vehicles/" + props.vehicleCategoryImgName)} alt="" /> */}
+                    {book && <img src={require(`../../../../Assets/Images/BookCovers/` + book.coverImage)} />}
                 </div>
                 <div>{params.bookIdentifier}</div>
             </div>

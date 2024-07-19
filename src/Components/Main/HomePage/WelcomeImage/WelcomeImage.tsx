@@ -1,5 +1,5 @@
 import "./WelcomeImage.scss";
-import welcomeImage from '../../../../Assets/Images/picks.jpg'
+import welcomeImage from '../../../../Assets/Images/picks.png'
 
 function WelcomeImage(): JSX.Element {
     return (
