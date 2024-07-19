@@ -4,7 +4,8 @@
   --accent-color: #D7B49E;
   --background-color: #F5F5DC;
   --text-color: #3E2723;
-
+  --soft-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  --bold-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
   font-size: 40px;
   font-size: clamp(20px, 5vw, 40px);
@@ -18,7 +19,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  max-width: 900px;
+  max-width: 1000px;
 }
 
 body * {

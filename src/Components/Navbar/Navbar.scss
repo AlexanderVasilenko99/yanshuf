@@ -1,5 +1,5 @@
 .Navbar {
-    width: 100vw;
+    max-width: 1000px;
     font-size: .8rem;
     display: flex;
     justify-content: space-evenly;
@@ -8,15 +8,17 @@
 
     text-align: center;
     box-sizing: border-box;
-    max-width: 900px;
     height: 30px;
     margin-bottom: 15px;
+    padding: 0px 50px;
 
     ul {
         height: 30px;
         padding: 0;
+        width: 900px;
         list-style-type: none;
         display: flex;
+        justify-content: center;
         border-top: 1px solid gray;
         border-bottom: 1px solid gray;
 

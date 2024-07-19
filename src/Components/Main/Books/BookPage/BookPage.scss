@@ -1,23 +1,95 @@
 .BookPage {
     min-height: 100vh;
+    padding: 0 50px;
 
     .initialInfo {
         display: grid;
         grid-template-columns: 1fr 3fr;
-        padding: 30px 0;
+        margin: 30px 0;
+        box-shadow: var(--bold-box-shadow);
+        z-index: 999;
+        border: 1px solid;
 
-        div {
-            &:nth-of-type(1) {
-                border: 1px solid;
+        .left-col {
 
-                img {
-                    width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .right-col {
+            padding: 0 15px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            a {
+                transition: 100ms all;
+                text-decoration: none;
+                color: var(--secondary-color);
+
+                &:hover {
+                    color: var(--accent-color);
+                    text-decoration: underline;
                 }
             }
 
-            &:nth-of-type(2) {
-                border: 1px solid;
+            p {
+                margin: 0;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+                font-size: 1rem;
+            }
+
+            .book-title {
+                font-weight: 600;
+            }
+
+            .series {
+                font-size: .4rem;
+            }
+
+            .author {
+                font-size: .4rem;
+
+                a {
+                    color: var(--text-color);
+                }
+            }
+
+            .description {
+                margin-top: 30px;
+                font-size: .6rem;
+            }
+
+            .price {
+                font-size: .6rem;
+                margin: auto;
+
+                button {
+                    width: fit-content;
+                    margin: auto;
+                    font-size: .6rem;
+                    padding: 0px 7.5px;
+                    border-radius: 7.5px;
+                    background-color: var(--accent-color);
+                    border: 2px solid var(--primary-color);
+                    box-shadow: var(--soft-box-shadow);
+                }
+            }
+
+            .language-rating {
+                margin-top: 30px;
+                font-size: .6rem;
+                display: flex;
+                justify-content: space-between;
             }
         }
+
     }
 }
