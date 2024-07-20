@@ -34,6 +34,11 @@ class BookServices {
         const filteredBooks = books.filter(b => b.series.name === series);
         return filteredBooks;
     }
+    public async getBooksByAuthor(author: string): Promise<BookModel[]> {
+        const books: BookModel[] = await this.getBooks();
+        const filteredBooks = books.filter(b => b.author === author);
+        return filteredBooks;
+    }
 }
 const bookServices = new BookServices();
 export default bookServices;
