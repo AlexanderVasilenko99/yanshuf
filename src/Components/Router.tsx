@@ -5,6 +5,8 @@ import Books from "./Main/Books/Books";
 import About from "./Main/About/About";
 import appConfig from "../Utils/AppConfig";
 import BookPage from "./Main/Books/BookPage/BookPage";
+import Authors from "./Main/Authors/Authors";
+import AuthorPage from "./Main/Authors/AuthorPage/AuthorPage";
 
 function Routing(): JSX.Element {
     return (
@@ -12,11 +14,13 @@ function Routing(): JSX.Element {
             <Routes>
                 {/* Default Route */}
                 <Route path="/" element={<Navigate to={"/home"} />}></Route>
-                <Route path="/yanshuf" element={<Navigate to={"/home"} />}></Route>
+                {/* <Route path="/yanshuf" element={<Navigate to={"/home"} />}></Route> */}
+                {/* <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route> */}
                 <Route path={appConfig.homePage} element={<HomePage />} />
-                <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route>
                 <Route path={appConfig.booksPage} element={<Books />} />
-                <Route path={appConfig.booksPage+"/:bookIdentifier"} element={<BookPage />} />
+                <Route path={appConfig.booksPage + "/:bookIdentifier"} element={<BookPage />} />
+                <Route path={appConfig.authorsPage} element={<Authors />} />
+                <Route path={appConfig.authorsPage + "/:authorIdentifier"} element={<AuthorPage />} />
                 <Route path={appConfig.aboutPage} element={<About />} />
                 {/* <Route path="/vacations/" element={<VacationsList />} />
                 <Route path="/vacations/new" element={<AddVacation />} />
