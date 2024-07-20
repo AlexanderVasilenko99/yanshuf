@@ -7,6 +7,8 @@ import appConfig from "../Utils/AppConfig";
 import BookPage from "./Main/Books/BookPage/BookPage";
 import Authors from "./Main/Authors/Authors";
 import AuthorPage from "./Main/Authors/AuthorPage/AuthorPage";
+import Series from "./Main/Series/Series";
+import SeriesPage from "./Main/Series/SeriesPage/SeriesPage";
 
 function Routing(): JSX.Element {
     return (
@@ -21,6 +23,8 @@ function Routing(): JSX.Element {
                 <Route path={appConfig.booksPage + "/:bookIdentifier"} element={<BookPage />} />
                 <Route path={appConfig.authorsPage} element={<Authors />} />
                 <Route path={appConfig.authorsPage + "/:authorIdentifier"} element={<AuthorPage />} />
+                <Route path={appConfig.seriesPage} element={<Series />} />
+                <Route path={appConfig.seriesPage + "/:seriesIdentifier"} element={<SeriesPage />} />
                 <Route path={appConfig.aboutPage} element={<About />} />
                 {/* <Route path="/vacations/" element={<VacationsList />} />
                 <Route path="/vacations/new" element={<AddVacation />} />

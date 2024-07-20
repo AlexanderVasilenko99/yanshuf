@@ -15,12 +15,12 @@
         width: 100%;
         font-size: .5rem;
 
-        .title {}
+        &.title {
+            font-weight: 600;
+        }
 
         &.author {
             font-weight: 300;
         }
     }
-
-    &:hover {}
 }

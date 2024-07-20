@@ -25,7 +25,10 @@ function BookPage(): JSX.Element {
                         <span className="book-title">{book.title} </span>
                         <span className="series">
                             {book.series && `(number ${book.series.orderInSeries} in the `}
-                            {book.series && <NavLink to='' >{book.series.name}</NavLink>}
+                            {book.series &&
+                                <NavLink to={`${appConfig.seriesPage}/${book.series.name}`}>
+                                    {book.series.name}
+                                </NavLink>}
                             {book.series && ` series)`}
                         </span>
                     </p>
