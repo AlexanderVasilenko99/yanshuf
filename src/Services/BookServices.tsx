@@ -35,6 +35,8 @@ class BookServices {
         return filteredBooks;
     }
     public async getBooksByAuthor(author: string): Promise<BookModel[]> {
+        console.log(author);
+        
         const books: BookModel[] = await this.getBooks();
         const filteredBooks = books.filter(b => b.author === author);
         return filteredBooks;

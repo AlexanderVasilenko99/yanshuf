@@ -3,6 +3,7 @@ import { NavLink, useParams } from "react-router-dom";
 import BookModel from "../../../../Models/BookModel";
 import bookServices from "../../../../Services/BookServices";
 import "./BookPage.scss";
+import appConfig from "../../../../Utils/AppConfig";
 
 function BookPage(): JSX.Element {
     const params = useParams();
@@ -28,7 +29,12 @@ function BookPage(): JSX.Element {
                             {book.series && ` series)`}
                         </span>
                     </p>
-                    <p className="author">by {<NavLink to='' >{book.author}</NavLink>}</p>
+                    <p className="author">by
+                        {<NavLink
+                            to={`${appConfig.authorsPage}/${book.author}`}>
+                            &nbsp;{book.author}
+                        </NavLink>}
+                    </p>
                     <p className="description">{book.description}</p>
                     <p className="language-rating">
                         <span className="language">Language: {book.language}</span>
