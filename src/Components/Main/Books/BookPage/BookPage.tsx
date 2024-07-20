@@ -24,18 +24,18 @@ function BookPage(): JSX.Element {
                     <p className="header">
                         <span className="book-title">{book.title} </span>
                         <span className="series">
-                            {book.series && `(number ${book.series.orderInSeries} in the `}
-                            {book.series &&
+                            {book.series.name && `(number ${book.series.orderInSeries} in the `}
+                            {book.series.name &&
                                 <NavLink to={`${appConfig.seriesPage}/${book.series.name}`}>
                                     {book.series.name}
                                 </NavLink>}
-                            {book.series && ` series)`}
+                            {book.series.name && ` series)`}
                         </span>
                     </p>
-                    <p className="author">by
+                    <p className="author">by&nbsp;
                         {<NavLink
                             to={`${appConfig.authorsPage}/${book.author}`}>
-                            &nbsp;{book.author}
+                            {book.author}
                         </NavLink>}
                     </p>
                     <p className="description">{book.description}</p>
