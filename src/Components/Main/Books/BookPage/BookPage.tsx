@@ -7,6 +7,7 @@ import appConfig from "../../../../Utils/AppConfig";
 
 function BookPage(): JSX.Element {
     const params = useParams();
+
     const [book, setBook] = useState<BookModel>();
     useEffect(() => {
         bookServices.getBookByAuthorAndTitle(params.bookIdentifier)
@@ -39,8 +40,16 @@ function BookPage(): JSX.Element {
                         </NavLink>}
                     </p>
                     <p className="description">{book.description}</p>
-                    <p className="language-rating">
-                        <span className="language">Language: {book.language}</span>
+                    <p className="more-info">
+                        <p className="language-genre">
+                            {/* Language: {book.language} */}
+                            <span className="language">Language: {book.language}</span>
+                            <span className="genre">Genre:&nbsp;
+                                <NavLink to={`${appConfig.genresPage}/${book.genre}`}>
+                                    {book.genre}
+                                </NavLink>
+                            </span>
+                        </p>
                         <span className="rating">Rating: {book.rating}</span>
 
                     </p>

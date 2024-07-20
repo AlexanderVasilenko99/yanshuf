@@ -83,11 +83,16 @@
                 }
             }
 
-            .language-rating {
+            .more-info {
                 margin-top: 30px;
                 font-size: .6rem;
                 display: flex;
                 justify-content: space-between;
+
+                .language-genre {
+                    display: flex;
+                    flex-direction: column;
+                }
             }
         }
 

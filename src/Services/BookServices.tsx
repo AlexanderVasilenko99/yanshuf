@@ -51,6 +51,11 @@ class BookServices {
         const filteredBooks = books.filter(b => b.author === author);
         return filteredBooks;
     }
+    public async getBooksByGenre(genre: string): Promise<BookModel[]> {
+        const books: BookModel[] = await this.getBooks();
+        const filteredBooks = books.filter(b => b.genre.toLowerCase() === genre.toLowerCase());
+        return filteredBooks;
+    }
 }
 const bookServices = new BookServices();
 export default bookServices;

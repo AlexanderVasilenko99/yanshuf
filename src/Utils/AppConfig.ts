@@ -4,8 +4,9 @@ class AppConfig {
     public readonly aboutPage = '/about';
     public readonly authorsPage = '/authors';
 
-    public readonly fictionPage = this.booksPage + '/fiction';
-    public readonly thrillerPage = this.booksPage + '/thriller';
+    public readonly genresPage = this.booksPage + '/genres';
+    // public readonly fictionPage = this.genresPage+ '/fiction';
+    // public readonly thrillerPage = this.genresPage+ '/thriller';
 
     public readonly seriesPage = this.booksPage + '/series';
 

@@ -9,7 +9,7 @@ function Navbar(): JSX.Element {
             <ul>
                 <li><NavLink to={appConfig.homePage}>Browse</NavLink></li>
                 <li><NavLink to={appConfig.booksPage}>Books</NavLink></li>
-                <li><NavLink to={appConfig.fictionPage}>Fiction</NavLink></li>
+                <li><NavLink to={appConfig.genresPage+"/fiction"}>Fiction</NavLink></li>
                 <li><NavLink to={appConfig.homePage}>Teens</NavLink></li>
                 <li><NavLink to={appConfig.authorsPage}>Authors</NavLink></li>
                 <li><NavLink to={appConfig.homePage}>About</NavLink></li>
