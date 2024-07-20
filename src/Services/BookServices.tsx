@@ -29,6 +29,11 @@ class BookServices {
         const book = books.find((b: BookModel) => search.includes(b.author) && search.includes(b.title));
         return book;
     }
+    public async getBooksBySeries(series: string): Promise<BookModel[]> {
+        const books: BookModel[] = await this.getBooks();
+        const filteredBooks = books.filter(b => b.series.name === series);
+        return filteredBooks;
+    }
 }
 const bookServices = new BookServices();
 export default bookServices;

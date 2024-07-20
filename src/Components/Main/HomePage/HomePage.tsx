@@ -30,9 +30,9 @@ function HomePage(): JSX.Element {
             <h6>PICKS OF THE MONTH</h6>
             <BookLine books={picksOfTheMonth} />
             <h6>BESTSELLERS</h6>
-            <BookLine books={bestsellers} />
+            {bestsellers && <BookLine books={bestsellers.slice(0, 5)} />}
             <h6>NEW IN</h6>
-            <BookLine books={newIn} />
+            {newIn && <BookLine books={newIn.slice(0, 5)} />}
         </div>
     );
 }
