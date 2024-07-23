@@ -26,12 +26,12 @@ class BookServices {
     }
     public async getBookByAuthorAndTitle(search: string): Promise<BookModel> {
         search = search
-            .replace(/([a-z])([A-Z])/g, '$1 $2')          // Insert space between lowercase and uppercase letters
-            .replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')     // Handle consecutive capital letters followed by lowercase
-            .replace(/(\b[A-Z]\.)\s*/g, '$1 ')            // Add space after initials (e.g., "J.D." -> "J. D.")
-            .replace(/-/g, ' ')                           // Replace dashes with spaces
-            .replace(/\s+/g, ' ')                         // Replace multiple spaces with a single space
-            .trim();                           // Trim leading and trailing spaces
+        // .replace(/([a-z])([A-Z])/g, '$1 $2')          // Insert space between lowercase and uppercase letters
+        // .replace(/([A-Z])([A-Z][a-z])/g, '$1 $2')     // Handle consecutive capital letters followed by lowercase
+        // .replace(/(\b[A-Z]\.)\s*/g, '$1 ')            // Add space after initials (e.g., "J.D." -> "J. D.")
+        // .replace(/-/g, ' ')                           // Replace dashes with spaces
+        // .replace(/\s+/g, ' ')                         // Replace multiple spaces with a single space
+        // .trim();                           // Trim leading and trailing spaces
 
         const books = await this.getBooks();
         const normalizedSearch = search.toLowerCase();
@@ -54,6 +54,17 @@ class BookServices {
     public async getBooksByGenre(genre: string): Promise<BookModel[]> {
         const books: BookModel[] = await this.getBooks();
         const filteredBooks = books.filter(b => b.genre.toLowerCase() === genre.toLowerCase());
+        return filteredBooks;
+    }
+    public async getBookByID(id: number): Promise<BookModel> {
+        const books: BookModel[] = await this.getBooks();
+        const book = books.find(b => b.id === id);
+        return book;
+    }
+    public async getBooksByIDs(ids: number[]): Promise<BookModel[]> {
+        const books: BookModel[] = await this.getBooks();
+        const idsSet = new Set(ids);
+        const filteredBooks: BookModel[] = books.filter((book: BookModel) => idsSet.has(book.id));
         return filteredBooks;
     }
 }
