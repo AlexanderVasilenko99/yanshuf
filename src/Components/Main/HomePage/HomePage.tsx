@@ -7,12 +7,13 @@ import WelcomeImage from "./WelcomeImage/WelcomeImage";
 
 
 function HomePage(): JSX.Element {
-
+    const dateForPicksOfTheMonth = new Date();
     const [bestsellers, setBestsellers] = useState<BookModel[]>();
     const [newIn, setNewIn] = useState<BookModel[]>();
     const [picksOfTheMonth, setPicksOfTheMonth] = useState<BookModel[]>();
+
     useEffect(() => {
-        bookServices.getPicksOfTheMonth()
+        bookServices.getPicksOfTheMonth(dateForPicksOfTheMonth.getFullYear(), dateForPicksOfTheMonth.getMonth() + 1)
             .then((books: BookModel[]) => { setPicksOfTheMonth(books) })
             .catch((err: any) => console.log(err.message));
         bookServices.getBestsellers()

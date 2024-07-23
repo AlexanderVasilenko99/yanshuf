@@ -1,6 +1,7 @@
 import axios from "axios";
 import BookModel from "../Models/BookModel";
 import appConfig from "../Utils/AppConfig";
+import PicksOfTheMonthModel from "../Models/PicksOfTheMonthModel";
 
 class BookServices {
     public async getBooks(): Promise<BookModel[]> {
@@ -8,10 +9,12 @@ class BookServices {
         const books: BookModel[] = response.data;
         return books;
     }
-    public async getPicksOfTheMonth(): Promise<BookModel[]> {
-        const response = await axios.get<BookModel[]>(appConfig.picksOfTheMonthFetchURL);
-        const books: BookModel[] = response.data;
-        return books;
+    public async getPicksOfTheMonth(year:number,month:number): Promise<BookModel[]> {
+        const response = await axios.get<PicksOfTheMonthModel[]>(appConfig.picksOfTheMonthFetchURL);
+        const data: PicksOfTheMonthModel[] = response.data;
+        const currentMonthIds:number[] = data.find((pick:PicksOfTheMonthModel)=>pick.month === month && pick.year === year).bookIds;
+        const currentMonthPicks:BookModel[] = await this.getBooksByIDs(currentMonthIds)
+        return currentMonthPicks;
     }
     public async getBestsellers(): Promise<BookModel[]> {
         const response = await axios.get<BookModel[]>(appConfig.booksFetchURL);
