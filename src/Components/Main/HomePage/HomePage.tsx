@@ -13,7 +13,7 @@ function HomePage(): JSX.Element {
     const [picksOfTheMonth, setPicksOfTheMonth] = useState<BookModel[]>();
 
     useEffect(() => {
-        bookServices.getPicksOfTheMonth(dateForPicksOfTheMonth.getFullYear(), dateForPicksOfTheMonth.getMonth() + 1)
+        bookServices.getPicksOfTheMonthByYearAndMonth(dateForPicksOfTheMonth.getFullYear(), dateForPicksOfTheMonth.getMonth() + 1)
             .then((books: BookModel[]) => { setPicksOfTheMonth(books) })
             .catch((err: any) => console.log(err.message));
         bookServices.getBestsellers()

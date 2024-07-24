@@ -9,12 +9,17 @@ class BookServices {
         const books: BookModel[] = response.data;
         return books;
     }
-    public async getPicksOfTheMonth(year:number,month:number): Promise<BookModel[]> {
+    public async getPicksOfTheMonthByYearAndMonth(year: number, month: number): Promise<BookModel[]> {
         const response = await axios.get<PicksOfTheMonthModel[]>(appConfig.picksOfTheMonthFetchURL);
         const data: PicksOfTheMonthModel[] = response.data;
-        const currentMonthIds:number[] = data.find((pick:PicksOfTheMonthModel)=>pick.month === month && pick.year === year).bookIds;
-        const currentMonthPicks:BookModel[] = await this.getBooksByIDs(currentMonthIds)
+        const currentMonthIds: number[] = data.find((pick: PicksOfTheMonthModel) => pick.month === month && pick.year === year).bookIds;
+        const currentMonthPicks: BookModel[] = await this.getBooksByIDs(currentMonthIds)
         return currentMonthPicks;
+    }
+    public async getAllPicksOfTheMonth(): Promise<BookModel[]> {
+        const response = await axios.get<BookModel[]>(appConfig.picksOfTheMonthFetchURL);
+        const picks: BookModel[] = response.data;
+        return picks;
     }
     public async getBestsellers(): Promise<BookModel[]> {
         const response = await axios.get<BookModel[]>(appConfig.booksFetchURL);

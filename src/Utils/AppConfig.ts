@@ -5,6 +5,7 @@ class AppConfig {
     public readonly authorsPage = '/authors';
 
     public readonly genresPage = this.booksPage + '/genres';
+    public readonly picksOfTheMonthPage = this.booksPage + '/picks-of-the-month';
     // public readonly fictionPage = this.genresPage+ '/fiction';
     // public readonly thrillerPage = this.genresPage+ '/thriller';
 
