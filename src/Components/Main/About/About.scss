@@ -1,1 +1,34 @@
-.About {}
+.About {
+    min-height: 100vh;
+
+    h3,
+    h5 {
+        margin: 20px;
+    }
+
+    p {
+        font-size: .6rem;
+        text-align: justify;
+        padding: 0px 60px;
+    }
+
+    .logistics {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        >* {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: .4rem;
+                margin: 0;
+                padding: 0px 75px;
+
+                a {
+                    // text-decoration: none;
+                }
+            }
+        }
+    }
+}
