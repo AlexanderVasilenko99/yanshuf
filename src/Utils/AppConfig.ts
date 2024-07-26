@@ -3,6 +3,9 @@ class AppConfig {
     public readonly booksPage = '/books';
     public readonly aboutPage = '/about';
     public readonly authorsPage = '/authors';
+    public readonly classesPage = '/classes';
+    public readonly weLovePage = '/we-love';
+    public readonly galleryPage = '/gallery';
 
     public readonly genresPage = this.booksPage + '/genres';
     public readonly picksOfTheMonthPage = this.booksPage + '/picks-of-the-month';
