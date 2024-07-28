@@ -4,7 +4,7 @@ import bookServices from "../../../Services/BookServices";
 import BookLine from "./BookLine/BookLine";
 import "./HomePage.scss";
 import WelcomeImage from "./WelcomeImage/WelcomeImage";
-
+import img  from '../../../Assets/Images/test2.jpg'
 
 function HomePage(): JSX.Element {
     const dateForPicksOfTheMonth = new Date();
@@ -34,6 +34,7 @@ function HomePage(): JSX.Element {
             {bestsellers && <BookLine books={bestsellers.slice(0, 5)} />}
             <h6>NEW IN</h6>
             {newIn && <BookLine books={newIn.slice(0, 5)} />}
+            {/* <img className="img" src={img} /> */}
         </div>
     );
 }
