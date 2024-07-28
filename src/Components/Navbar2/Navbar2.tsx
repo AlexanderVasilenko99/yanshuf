@@ -44,49 +44,58 @@ function NavbarArea(): JSX.Element {
 
     return (
         <ul className="Navbar2">
-            <NavbarItem
-                // isDropdown
-                itemText='SEARCH'
-                itemDestinationPagePath={'#'}
-            // subNavItems={fleetSubNavItems}
-            />
-            <NavbarItem
-                // isDropdown
-                itemText='BOOKS'
-                itemDestinationPagePath={appConfig.booksPage}
-            // subNavItems={fleetSubNavItems}
-            />
-            <NavbarItem
-                // isDropdown
-                itemText='CLASSES'
-                itemDestinationPagePath={appConfig.classesPage}
-            // subNavItems={servicesSubNavItems}
-            />
-            <NavbarItem
-                // isDropdown
-                itemText='THE THINGS WE LOVE'
-                itemDestinationPagePath={appConfig.weLovePage}
-            // subNavItems={locationsSubNavItems}
-            />
-            <NavbarItem
-                isDropdown
-                itemText='GALLERY'
-                itemDestinationPagePath={appConfig.galleryPage}
-            // subNavItems={careersSubNavItems}
-            />
-            <NavbarItem
-                // isDropdown 
-                itemText='AUTHORS'
-                itemDestinationPagePath={appConfig.authorsPage}
-            // subNavItems={helpSubNavItems}
-            />
-            <NavbarItem
-                // isDropdown 
-                itemText='ABOUT'
-                itemDestinationPagePath={appConfig.aboutPage}
-            // subNavItems={helpSubNavItems}
-            />
-
+            <li className="language-switcher">
+                <img src="https://flagsapi.com/GB/shiny/64.png" />
+            </li>
+            <li>
+                <ul className="inner-ul">
+                    <NavbarItem
+                        // isDropdown
+                        itemText='SEARCH'
+                        itemDestinationPagePath={'#'}
+                    // subNavItems={fleetSubNavItems}
+                    />
+                    <NavbarItem
+                        // isDropdown
+                        itemText='BOOKS'
+                        itemDestinationPagePath={appConfig.booksPage}
+                    // subNavItems={fleetSubNavItems}
+                    />
+                    <NavbarItem
+                        // isDropdown
+                        itemText='CLASSES'
+                        itemDestinationPagePath={appConfig.classesPage}
+                    // subNavItems={servicesSubNavItems}
+                    />
+                    <NavbarItem
+                        // isDropdown
+                        itemText='THE THINGS WE LOVE'
+                        itemDestinationPagePath={appConfig.weLovePage}
+                    // subNavItems={locationsSubNavItems}
+                    />
+                    <NavbarItem
+                        isDropdown
+                        itemText='GALLERY'
+                        itemDestinationPagePath={appConfig.galleryPage}
+                    // subNavItems={careersSubNavItems}
+                    />
+                    <NavbarItem
+                        // isDropdown 
+                        itemText='AUTHORS'
+                        itemDestinationPagePath={appConfig.authorsPage}
+                    // subNavItems={helpSubNavItems}
+                    />
+                    <NavbarItem
+                        // isDropdown 
+                        itemText='ABOUT'
+                        itemDestinationPagePath={appConfig.aboutPage}
+                    // subNavItems={helpSubNavItems}
+                    />
+                </ul>
+            </li>
+            <li className="language-switcher">
+                <img src="https://flagsapi.com/GB/shiny/64.png" />
+            </li>
         </ul>
     );
 }
