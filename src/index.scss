@@ -19,13 +19,18 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  max-width: 1000px;
-}
 
-body * {
-  color: var(--text-color);
-}
 
-::-webkit-scrollbar {
-  display: none;
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  * {
+    color: var(--text-color);
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }

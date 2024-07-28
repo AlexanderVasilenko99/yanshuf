@@ -1,0 +1,36 @@
+.Navbar2 {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    max-width: 100vw;
+
+
+    a[class="logo active"],
+    a[class="NavbarItem searchItem active"] {
+        background-color: #952323;
+    }
+
+    a[class="NavbarItem searchItem active"]:hover {
+        cursor: auto;
+    }
+
+    // .active {
+    //     background-color: var(--secondary-color);
+    // }
+
+    // a:hover {
+    //     background-color: var(--secondary-color)
+    // }
+
+    a[class="logo"]:hover,
+    a[class="logo active"]:hover {
+        background-color: #952323
+    }
+
+}
