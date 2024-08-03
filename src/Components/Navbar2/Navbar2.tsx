@@ -6,6 +6,7 @@ import "./Navbar2.scss";
 // import navbarLogo from "../../../Assets/Images"
 // import { SubNavItem } from '../../../Models/SubNavItem';
 import NavbarItem from "./NavbarItem/NavbarItem";
+import { useState } from "react";
 
 // const fleetSubNavItems: SubNavItem[] = [
 //     new SubNavItem('Small', appConfig.fleetPageSmallPath),
@@ -41,13 +42,13 @@ import NavbarItem from "./NavbarItem/NavbarItem";
 
 
 function NavbarArea(): JSX.Element {
-
+    const [isLanguageEnglish, setIsLanguageEnglish] = useState<boolean>(true);
 
     return (
         <ul className="Navbar2">
-            <li className="language-switcher">
+            <li className="language-switcher" onClick={() => setIsLanguageEnglish(!isLanguageEnglish)}>
                 <NavLink to={appConfig.homePage}>
-                    <img src="https://flagsapi.com/GB/shiny/64.png" />
+                    {isLanguageEnglish ? <img src="https://flagsapi.com/GB/shiny/64.png" /> : <img src="https://flagsapi.com/IL/shiny/64.png" />}
                 </NavLink>
             </li>
             <li>
@@ -98,7 +99,7 @@ function NavbarArea(): JSX.Element {
             </li>
             <li className="language-switcher">
                 <NavLink to={appConfig.homePage}>
-                    <img src="https://flagsapi.com/GB/shiny/64.png" />
+                    {isLanguageEnglish ? <img src="https://flagsapi.com/GB/shiny/64.png" /> : <img src="https://flagsapi.com/IL/shiny/64.png" />}
                 </NavLink>
             </li>
         </ul>
