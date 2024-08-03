@@ -29,7 +29,7 @@ function HomePage(): JSX.Element {
             <WelcomeImage />
             <div className="welcomeText">Ra'ananas most iconic bookstore now with an online presence!</div>
             <h6>PICKS OF THE MONTH</h6>
-            <BookLine books={picksOfTheMonth} />
+            {picksOfTheMonth && <BookLine books={picksOfTheMonth} />}
             <h6>BESTSELLERS</h6>
             {bestsellers && <BookLine books={bestsellers.slice(0, 5)} />}
             <h6>NEW IN</h6>

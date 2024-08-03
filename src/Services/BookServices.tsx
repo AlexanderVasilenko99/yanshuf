@@ -16,9 +16,9 @@ class BookServices {
         const currentMonthPicks: BookModel[] = await this.getBooksByIDs(currentMonthIds)
         return currentMonthPicks;
     }
-    public async getAllPicksOfTheMonth(): Promise<BookModel[]> {
-        const response = await axios.get<BookModel[]>(appConfig.picksOfTheMonthFetchURL);
-        const picks: BookModel[] = response.data;
+    public async getAllPicksOfTheMonth(): Promise<PicksOfTheMonthModel[]> {
+        const response = await axios.get<PicksOfTheMonthModel[]>(appConfig.picksOfTheMonthFetchURL);
+        const picks: PicksOfTheMonthModel[] = response.data;
         return picks;
     }
     public async getBestsellers(): Promise<BookModel[]> {
