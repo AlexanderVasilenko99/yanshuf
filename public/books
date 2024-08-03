@@ -478,5 +478,25 @@
         },
         "edition": "1st Edition",
         "releaseDate": "2019-02-05"
+    },
+    {
+        "id": 25,
+        "title": "Brave New World",
+        "author": "Aldous Huxley",
+        "genre": "Dystopian",
+        "publishedYear": 1932,
+        "price": 14.99,
+        "coverImage": "BraveNewWorld.jpg",
+        "description": "A dystopian social science fiction novel and a cautionary tale about the dangers of state control and technological advancements.",
+        "rating": 4.6,
+        "publisher": "Chatto & Windus",
+        "pageCount": 268,
+        "language": "English",
+        "series": {
+            "name": "",
+            "orderInSeries": 0
+        },
+        "edition": "1st",
+        "releaseDate": "1932-08-18"
     }
 ]
