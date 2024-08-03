@@ -1,0 +1,10 @@
+.Marquee {
+    font-size: .5rem;
+    * {
+        padding: 2px 0px;
+        background-color: var(--secondary-color);
+    }
+    .marquee-text{
+        padding: 0px 300px;
+    }
+}

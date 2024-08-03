@@ -1,11 +1,13 @@
 import "./WelcomeImage.scss";
-import welcomeImage from '../../../../Assets/Images/picks.png'
+import welcomeImage from '../../../../Assets/Images/picks082024.png'
+import { NavLink } from "react-router-dom";
+import appConfig from "../../../../Utils/AppConfig";
 
 function WelcomeImage(): JSX.Element {
     return (
-        <div className="WelcomeImage">
+        <NavLink to={appConfig.picksOfTheMonthPage} className="WelcomeImage">
             <img src={welcomeImage}/>
-        </div>
+        </NavLink>
     );
 }
 

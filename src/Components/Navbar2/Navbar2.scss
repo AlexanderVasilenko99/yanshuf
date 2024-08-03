@@ -1,5 +1,5 @@
 .Navbar2 {
-    .language-switcher {
+    .language-switcher,a {
         box-sizing: border-box;
         display: flex;
         justify-content: center;
@@ -9,10 +9,6 @@
             width: 35px;
             cursor: pointer;
             margin: 0px 15px;
-        }
-
-        &:nth-last-of-type(1) {
-            visibility: hidden;
         }
     }
 

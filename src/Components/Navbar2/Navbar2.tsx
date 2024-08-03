@@ -1,4 +1,5 @@
 // import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import appConfig from "../../Utils/AppConfig";
 import "./Navbar2.scss";
 // import navbarLogo from "../../../Assets/Images/navbar-logo.png";
@@ -45,7 +46,9 @@ function NavbarArea(): JSX.Element {
     return (
         <ul className="Navbar2">
             <li className="language-switcher">
-                <img src="https://flagsapi.com/GB/shiny/64.png" />
+                <NavLink to={appConfig.homePage}>
+                    <img src="https://flagsapi.com/GB/shiny/64.png" />
+                </NavLink>
             </li>
             <li>
                 <ul className="inner-ul">
@@ -94,7 +97,9 @@ function NavbarArea(): JSX.Element {
                 </ul>
             </li>
             <li className="language-switcher">
-                <img src="https://flagsapi.com/GB/shiny/64.png" />
+                <NavLink to={appConfig.homePage}>
+                    <img src="https://flagsapi.com/GB/shiny/64.png" />
+                </NavLink>
             </li>
         </ul>
     );
