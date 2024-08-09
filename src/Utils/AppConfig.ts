@@ -3,14 +3,12 @@ class AppConfig {
     public readonly booksPage = '/books';
     public readonly aboutPage = '/about';
     public readonly authorsPage = '/authors';
-    public readonly classesPage = '/classes';
+    public readonly dAndDPage = '/d&d';
     public readonly weLovePage = '/we-love';
     public readonly galleryPage = '/gallery';
 
     public readonly genresPage = this.booksPage + '/genres';
     public readonly picksOfTheMonthPage = this.booksPage + '/picks-of-the-month';
-    // public readonly fictionPage = this.genresPage+ '/fiction';
-    // public readonly thrillerPage = this.genresPage+ '/thriller';
 
     public readonly seriesPage = this.booksPage + '/series';
 

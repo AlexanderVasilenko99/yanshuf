@@ -12,9 +12,9 @@ import Series from "./Main/Series/Series";
 import SeriesPage from "./Main/Series/SeriesPage/SeriesPage";
 import './Routing.scss';
 import PicksOTM from "./Main/PicksOTM/PicksOTM";
-import Classes from "./Main/Classes/Classes";
 import WeLove from "./Main/WeLove/WeLove";
 import Gallery from "./Main/Gallery/Gallery";
+import DandD from "./Main/DandD/DandD";
 
 function Routing(): JSX.Element {
     return (
@@ -35,18 +35,10 @@ function Routing(): JSX.Element {
                 <Route path={appConfig.genresPage + "/:genreIdentifier"} element={<GenrePage />} />
                 <Route path={appConfig.aboutPage} element={<About />} />
                 <Route path={appConfig.picksOfTheMonthPage} element={<PicksOTM />} />
-                <Route path={appConfig.classesPage} element={<Classes />} />
+                <Route path={appConfig.dAndDPage} element={<DandD/>} />
                 <Route path={appConfig.weLovePage} element={<WeLove />} />
                 <Route path={appConfig.galleryPage} element={<Gallery />} />
-                {/* <Route path="/vacations/" element={<VacationsList />} />
-                <Route path="/vacations/new" element={<AddVacation />} />
-                <Route path="/vacations/:uuid" element={<VacationPage />} />
-                <Route path="/register/" element={<RegisterComponent />} />
-                <Route path="/reports/" element={<ReportsArea />} />
-                <Route path="/users/:uuid" element={<UserArea />} />
-                <Route path="/about/" element={<AboutArea />} />
-                <Route path="/login/" element={<Login />} />
-                <Route path="/*" element={<PageNotFound />}></Route> */}
+                {/* <Route path="/*" element={<PageNotFound />}></Route> */}
             </Routes>
         </div>
     );
