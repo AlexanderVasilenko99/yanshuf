@@ -54,6 +54,12 @@ class BookServices {
         const filteredBooks = books.filter(b => b.series.name === series);
         return filteredBooks;
     }
+    public async getAuthors(): Promise<string[]> {
+        const names = new Set<string>();
+        const books: BookModel[] = await this.getBooks();
+        books.forEach(b => names.add(b.author));
+        return Array.from(names);
+    }
     public async getBooksByAuthor(author: string): Promise<BookModel[]> {
         const books: BookModel[] = await this.getBooks();
         const filteredBooks = books.filter(b => b.author === author);
