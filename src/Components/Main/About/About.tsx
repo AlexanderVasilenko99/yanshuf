@@ -42,6 +42,29 @@ function About(): JSX.Element {
                     </p>
                 </div>
             </div>
+            <div className="write-to-us">
+                <h5>Write to us!</h5>
+                <p>
+                    We’d love to hear from you! Whether you have questions, suggestions, or just want to say hello, feel free to reach out.
+                    Your feedback helps us improve and continue providing the best experience for our readers. Fill out the form below,
+                    and we’ll get back to you as soon as possible!
+                </p>
+                <form className="write-us-form">
+                    <div className="means-of-contact">
+                        <label>Name</label>
+                        <div className="spacer"></div>
+                        <label>Phone number</label>
+                        <input type="text" />
+                        <div className="spacer"></div>
+                        <input type="tel" />
+                    </div>
+                    <div className="message">
+                        <label>Content:</label>
+                        <textarea />
+                        <button>Send!</button>
+                    </div>
+                </form>
+            </div>
         </div>
     );
 }
