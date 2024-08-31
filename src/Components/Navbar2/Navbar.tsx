@@ -1,18 +1,15 @@
-import { useState } from "react";
-import { NavLink } from "react-router-dom";
 import appConfig from "../../Utils/AppConfig";
-import "./Navbar2.scss";
+import LanguageSwitcher from "../LanguageSwitcher";
+import "./Navbar.scss";
 import NavbarItem from "./NavbarItem/NavbarItem";
 
+
 function NavbarArea(): JSX.Element {
-    const [isLanguageEnglish, setIsLanguageEnglish] = useState<boolean>(true);
 
     return (
-        <ul className="Navbar2">
-            <li className="language-switcher" onClick={() => setIsLanguageEnglish(!isLanguageEnglish)}>
-                <NavLink to={appConfig.homePage}>
-                    {isLanguageEnglish ? <img src="https://flagsapi.com/GB/shiny/64.png" /> : <img src="https://flagsapi.com/IL/shiny/64.png" />}
-                </NavLink>
+        <ul className="Navbar">
+            <li className="language-switcher">
+                Logo
             </li>
             <li>
                 <ul className="inner-ul">
@@ -43,9 +40,7 @@ function NavbarArea(): JSX.Element {
                 </ul>
             </li>
             <li className="language-switcher">
-                <NavLink to={appConfig.homePage}>
-                    {isLanguageEnglish ? <img src="https://flagsapi.com/GB/shiny/64.png" /> : <img src="https://flagsapi.com/IL/shiny/64.png" />}
-                </NavLink>
+                <LanguageSwitcher />
             </li>
         </ul>
     );
