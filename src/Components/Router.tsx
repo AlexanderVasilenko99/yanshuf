@@ -15,6 +15,7 @@ import PicksOTM from "./Main/PicksOTM/PicksOTM";
 import WeLove from "./Main/WeLove/WeLove";
 import Gallery from "./Main/Gallery/Gallery";
 import DandD from "./Main/DandD/DandD";
+import Sales from "./Main/Sales/Sales";
 
 function Routing(): JSX.Element {
     return (
@@ -34,6 +35,7 @@ function Routing(): JSX.Element {
                 <Route path={appConfig.genresPage} element={<Genres />} />
                 <Route path={appConfig.genresPage + "/:genreIdentifier"} element={<GenrePage />} />
                 <Route path={appConfig.aboutPage} element={<About />} />
+                <Route path={appConfig.salesPage} element={<Sales />} />
                 <Route path={appConfig.picksOfTheMonthPage} element={<PicksOTM />} />
                 <Route path={appConfig.dAndDPage} element={<DandD/>} />
                 <Route path={appConfig.weLovePage} element={<WeLove />} />

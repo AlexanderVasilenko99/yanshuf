@@ -2,6 +2,7 @@ class AppConfig {
     public readonly homePage = '/home';
     public readonly booksPage = '/books';
     public readonly aboutPage = '/about';
+    public readonly salesPage = '/sales';
     public readonly authorsPage = '/authors';
     public readonly dAndDPage = '/d&d';
     public readonly weLovePage = '/we-love';

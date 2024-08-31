@@ -17,10 +17,6 @@ function NavbarArea(): JSX.Element {
             <li>
                 <ul className="inner-ul">
                     <NavbarItem
-                        itemText='SEARCH'
-                        itemDestinationPagePath={'#'}
-                    />
-                    <NavbarItem
                         itemText='BOOKS'
                         itemDestinationPagePath={appConfig.booksPage}
                     />
@@ -29,13 +25,16 @@ function NavbarArea(): JSX.Element {
                         itemDestinationPagePath={appConfig.dAndDPage}
                     />
                     <NavbarItem
+                        itemText='GALLERY'
+                        itemDestinationPagePath={appConfig.galleryPage}
+                    />
+                    <NavbarItem
                         itemText='THE THINGS WE LOVE'
                         itemDestinationPagePath={appConfig.weLovePage}
                     />
                     <NavbarItem
-                        isDropdown
-                        itemText='GALLERY'
-                        itemDestinationPagePath={appConfig.galleryPage}
+                        itemText='SALES'
+                        itemDestinationPagePath={appConfig.salesPage}
                     />
                     <NavbarItem
                         itemText='ABOUT'
