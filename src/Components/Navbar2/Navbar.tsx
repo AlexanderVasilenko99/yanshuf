@@ -1,40 +1,43 @@
+import { NavLink } from "react-router-dom";
 import appConfig from "../../Utils/AppConfig";
-import LanguageSwitcher from "../LanguageSwitcher";
+import LanguageSwitcher from "../Main/LanguageSwitcher/LanguageSwitcher";
 import "./Navbar.scss";
 import NavbarItem from "./NavbarItem/NavbarItem";
+import { useTranslation } from "react-i18next";
 
 
 function NavbarArea(): JSX.Element {
+    const { t } = useTranslation();
 
     return (
         <ul className="Navbar">
             <li className="language-switcher">
-                Logo
+                <NavLink to={appConfig.homePage}>{t('Logo')}</NavLink>
             </li>
             <li>
                 <ul className="inner-ul">
                     <NavbarItem
-                        itemText='BOOKS'
+                        itemText={t('BOOKS')}
                         itemDestinationPagePath={appConfig.booksPage}
                     />
                     <NavbarItem
-                        itemText='D&D'
+                        itemText={t('D&D')}
                         itemDestinationPagePath={appConfig.dAndDPage}
                     />
                     <NavbarItem
-                        itemText='GALLERY'
+                        itemText={t('GALLERY')}
                         itemDestinationPagePath={appConfig.galleryPage}
                     />
                     <NavbarItem
-                        itemText='THE THINGS WE LOVE'
+                        itemText={t('THE THINGS WE LOVE')}
                         itemDestinationPagePath={appConfig.weLovePage}
                     />
                     <NavbarItem
-                        itemText='SALES'
+                        itemText={t('SALES')}
                         itemDestinationPagePath={appConfig.salesPage}
                     />
                     <NavbarItem
-                        itemText='ABOUT'
+                        itemText={t('ABOUT')}
                         itemDestinationPagePath={appConfig.aboutPage}
                     />
                 </ul>
