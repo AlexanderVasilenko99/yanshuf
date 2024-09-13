@@ -29,7 +29,7 @@ function NavbarArea(): JSX.Element {
                         itemDestinationPagePath={appConfig.galleryPage}
                     />
                     <NavbarItem
-                        itemText={t('THE THINGS WE LOVE')}
+                        itemText={t('ARTICLES')}
                         itemDestinationPagePath={appConfig.weLovePage}
                     />
                     <NavbarItem
