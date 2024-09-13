@@ -30,7 +30,7 @@ function NavbarArea(): JSX.Element {
                     />
                     <NavbarItem
                         itemText={t('ARTICLES')}
-                        itemDestinationPagePath={appConfig.weLovePage}
+                        itemDestinationPagePath={appConfig.articlesPage}
                     />
                     <NavbarItem
                         itemText={t('SALES')}

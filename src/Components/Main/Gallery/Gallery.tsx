@@ -3,7 +3,7 @@ import "./Gallery.scss";
 function Gallery(): JSX.Element {
     return (
         <div className="Gallery">
-            <span>Gallery</span>
+            <h3>Gallery</h3>
         </div>
     );
 }

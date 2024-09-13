@@ -12,7 +12,7 @@ import Series from "./Main/Series/Series";
 import SeriesPage from "./Main/Series/SeriesPage/SeriesPage";
 import './Routing.scss';
 import PicksOTM from "./Main/PicksOTM/PicksOTM";
-import WeLove from "./Main/WeLove/WeLove";
+import Articles from "./Main/Articles/Articles";
 import Gallery from "./Main/Gallery/Gallery";
 import DandD from "./Main/DandD/DandD";
 import Sales from "./Main/Sales/Sales";
@@ -38,7 +38,7 @@ function Routing(): JSX.Element {
                 <Route path={appConfig.salesPage} element={<Sales />} />
                 <Route path={appConfig.picksOfTheMonthPage} element={<PicksOTM />} />
                 <Route path={appConfig.dAndDPage} element={<DandD/>} />
-                <Route path={appConfig.weLovePage} element={<WeLove />} />
+                <Route path={appConfig.articlesPage} element={<Articles />} />
                 <Route path={appConfig.galleryPage} element={<Gallery />} />
                 {/* <Route path="/*" element={<PageNotFound />}></Route> */}
             </Routes>

@@ -5,7 +5,7 @@ class AppConfig {
     public readonly salesPage = '/sales';
     public readonly authorsPage = '/authors';
     public readonly dAndDPage = '/d&d';
-    public readonly weLovePage = '/we-love';
+    public readonly articlesPage = '/articles';
     public readonly galleryPage = '/gallery';
 
     public readonly genresPage = this.booksPage + '/genres';

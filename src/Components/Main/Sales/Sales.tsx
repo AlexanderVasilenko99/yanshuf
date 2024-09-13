@@ -5,7 +5,7 @@ function Sales(): JSX.Element {
     const { t } = useTranslation();
     return (
         <div className="Sales">
-            <span>{t('Sales')}</span>
+            <h3>{t('Sales')}</h3>
         </div>
     );
 }

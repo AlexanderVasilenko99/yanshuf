@@ -3,7 +3,7 @@ import "./DandD.scss";
 function DandD(): JSX.Element {
     return (
         <div className="DandD">
-            <span>DandD</span>
+            <h3>D&D</h3>
         </div>
     );
 }
