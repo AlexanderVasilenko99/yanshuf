@@ -20,7 +20,6 @@ i18n
   .use(initReactI18next)
   .init({
     resources: { he: { translation: translationHE } },
-    // en: { translation: translationEN },
     lng: 'en',
     fallbackLng: 'en',
     interpolation: {
@@ -29,10 +28,11 @@ i18n
   });
 
 root.render(
-  <BrowserRouter basename='/yanshuf'>
+  < BrowserRouter >
+    {/* basename='/yanshuf' */}
     <ScrollToTop />
-    <Marquee />
-    <Navbar2 />
+    {/* <Marquee /> */}
+    < Navbar2 />
     <main>
       <Router />
       <Footer />

@@ -3,7 +3,7 @@ import "./Genres.scss";
 function Genres(): JSX.Element {
     return (
         <div className="Genres">
-            <span>Genres</span>
+            <h3>Genres</h3>
         </div>
     );
 }

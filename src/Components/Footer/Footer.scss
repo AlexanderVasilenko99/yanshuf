@@ -1,9 +1,15 @@
 .Footer {
     font-size: .4rem;
-    color: var(--text-color);
+    background-color: var(--primary-color);
+    padding-top: 4px;
 
     p {
+        color: var(--accent-color);
         margin: 0;
         padding: 0 0 5px;
+
+        a {
+            color: var(--accent-color);
+        }
     }
 }

@@ -15,7 +15,8 @@ function AuthorPage(): JSX.Element {
     }, []);
 
     return (
-        <div className="AuthorPage">All books by {params.authorIdentifier}:
+        <div className="AuthorPage">
+            <h3>All books by {params.authorIdentifier}:</h3>
             <ul>
                 {books?.map((book: BookModel, index: number) => <Book {...book} key={index} />)}
             </ul>

@@ -3,7 +3,7 @@ import "./Series.scss";
 function Series(): JSX.Element {
     return (
         <div className="Series">
-            <span>Series</span>
+            <h3>Series</h3>
         </div>
     );
 }

@@ -15,7 +15,8 @@ function GenrePage(): JSX.Element {
     }, []);
 
     return (
-        <div className="GenrePage">All {params.genreIdentifier} books:
+        <div className="GenrePage">
+            <h3>All {params.genreIdentifier} books:</h3>
             <ul>
                 {books?.map((book: BookModel, index: number) => <Book {...book} key={index} />)}
             </ul>

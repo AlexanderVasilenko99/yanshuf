@@ -15,7 +15,8 @@ function SeriesPage(): JSX.Element {
     }, []);
 
     return (
-        <div className="SeriesPage">All books from the {params.seriesIdentifier} series:
+        <div className="SeriesPage">
+            <h3>All books from the {params.seriesIdentifier} series:</h3>
             <ul>
                 {books?.map((book: BookModel, index: number) => <Book {...book} key={index} />)}
             </ul>

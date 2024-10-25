@@ -1,5 +1,8 @@
 .Navbar {
-    .language-switcher,a {
+    box-shadow: var(--bold-box-shadow);
+
+    .language-switcher,
+    a {
         box-sizing: border-box;
         display: flex;
         justify-content: center;
@@ -22,6 +25,9 @@
     justify-content: space-between;
     align-items: center;
     height: 60px;
+    position: absolute;
+    z-index: 999;
+    top: -60px;
     max-width: 100vw;
 
     .inner-ul {
@@ -58,5 +64,14 @@
     // a[class="logo active"]:hover {
     //     background-color: #952323
     // }
+    animation: slideIn 1000ms 3s 1 forwards;
+}
 
+@keyframes slideIn {
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 0px;
+    }
 }

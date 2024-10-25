@@ -27,13 +27,13 @@ function HomePage(): JSX.Element {
     return (
         <div className="HomePage">
             <WelcomeImage />
-            <div className="welcomeText">Ra'ananas most iconic bookstore now with an online presence!</div>
+            {/* <div className="welcomeText">Ra'ananas most iconic bookstore now with an online presence!</div>
             <h6>PICKS OF THE MONTH</h6>
             {picksOfTheMonth && <BookLine books={picksOfTheMonth} />}
             <h6>BESTSELLERS</h6>
             {bestsellers && <BookLine books={bestsellers.slice(0, 5)} />}
             <h6>NEW IN</h6>
-            {newIn && <BookLine books={newIn.slice(0, 5)} />}
+            {newIn && <BookLine books={newIn.slice(0, 5)} />} */}
             {/* <img className="img" src={img} /> */}
         </div>
     );
