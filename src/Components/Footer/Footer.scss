@@ -1,15 +1,16 @@
 .Footer {
     font-size: .4rem;
     background-color: var(--primary-color);
+    background-color: var(--background-color);
     padding-top: 4px;
 
     p {
-        color: var(--accent-color);
+        color: var(--primary-color);
         margin: 0;
         padding: 0 0 5px;
 
         a {
-            color: var(--accent-color);
+            color: var(--primary-color);
         }
     }
 }

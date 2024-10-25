@@ -1,4 +1,6 @@
 import "./About.scss";
+import img1 from '../../../Assets/Images/yan1.jpg';
+import img2 from '../../../Assets/Images/yan1.jpg';
 
 function About(): JSX.Element {
     return (
@@ -15,6 +17,12 @@ function About(): JSX.Element {
                     conduct our many events, movie shows, courses, and more... These are
                     announced here prior to their occurrence.
                 </p>
+            </div>
+            <div className="images">
+                <hr />
+                <img src={img1} alt="store1" />
+                <img src={img2} alt="store2" />
+                {/* <hr /> */}
             </div>
             <div className="logistics">
                 <div className="left-col">

@@ -4,6 +4,21 @@
   --accent-color: #D7B49E;
   --background-color: #F5F5DC;
   --text-color: #3E2723;
+
+  // --primary-color: #3B2F2F;         /* Deep brownish-maroon for a dramatic feel */
+  // --secondary-color: #5A3E36;       /* Muted, dark auburn for depth */
+  // --accent-color: #947C7C;          /* Softened mauve for subtle contrast */
+  // --background-color: #1C1B1A;      /* Very dark charcoal gray for ambiance */
+  // --text-color: #E0DED5;            /* Light parchment beige for readability */
+  // --gold-accent-color: #C6A85B;     /* Muted gold for elegant accents */
+
+  --primary-color: #C6A85B;         /* Muted gold for an elegant touch */
+--secondary-color: #3B2F2F;       /* Deep brownish-maroon for a dramatic feel */
+--accent-color: #5A3E36;          /* Muted, dark auburn for depth */
+// --background-color: #1C1B1A;      /* Very dark charcoal gray for ambiance */
+--background-color: #1A0F0F;      /* Very dark charcoal gray for ambiance */
+--text-color: #E0DED5; 
+
   --soft-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   --bold-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
@@ -28,6 +43,10 @@ body {
 
   * {
     color: var(--text-color);
+    &::selection{
+      color: var(--background-color);
+      background-color: var(--primary-color);
+    }
   }
 
   ::-webkit-scrollbar {

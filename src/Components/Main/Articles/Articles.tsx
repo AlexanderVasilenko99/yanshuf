@@ -8,6 +8,7 @@ function Articles(): JSX.Element {
             <ul>
                 <Article />
                 <Article />
+                <Article />
             </ul>
         </div>
     );

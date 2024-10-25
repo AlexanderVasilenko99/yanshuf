@@ -1,5 +1,6 @@
 .ArticleItem {
     padding: 0px;
+    transition: 500ms all;
 
     .initialInfo {
         display: grid;
@@ -7,7 +8,7 @@
         margin: 30px 0;
         box-shadow: var(--bold-box-shadow);
         z-index: 999;
-        border: 1px solid;
+        border: 1px solid var(--primary-color);
 
         .left-col {
             .image-container {
@@ -28,17 +29,6 @@
             display: flex;
             flex-direction: column;
             text-align: right;
-
-            // a {
-            //     transition: 100ms all;
-            //     text-decoration: none;
-            //     color: var(--secondary-color);
-
-            //     &:hover {
-            //         color: var(--accent-color);
-            //         text-decoration: underline;
-            //     }
-            // }
 
             hr {
                 border: 2px solid var(--secondary-color);
@@ -74,6 +64,9 @@
                 font-size: .6rem;
             }
         }
+    }
 
+    &:hover{
+        scale: 1.05;
     }
 }

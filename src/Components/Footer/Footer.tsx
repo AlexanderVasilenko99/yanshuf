@@ -6,7 +6,7 @@ function Footer(): JSX.Element {
     return (
         <div className="Footer">
             <p>{t(`©Yanshuf books ltd. All rights reserved. Made possible by`)}
-                &nbsp;<a href="https://alexandervasilenko.com" target="_blank">Alexander Vasilenko.</a>
+                &nbsp;<a href="https://alexandervasilenko.com" target="_blank">Alexander Vasilenko</a>.
             </p>
         </div>
     );
