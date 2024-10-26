@@ -1,6 +1,6 @@
 import "./About.scss";
-import img1 from '../../../Assets/Images/yan1.jpg';
-import img2 from '../../../Assets/Images/yan1.jpg';
+import img1 from '../../../Assets/Images/GalleryImages/yan1.jpg'; //13,2
+import img2 from '../../../Assets/Images/GalleryImages/yan2.jpg';
 
 function About(): JSX.Element {
     return (

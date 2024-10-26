@@ -22,10 +22,10 @@ function NavbarArea(): JSX.Element {
             </li>
             <li className={isOpen ? "open" : ""}>
                 <ul className={`inner-ul`}>
-                    <NavbarItem
+                    {/* <NavbarItem
                         itemText={t('BOOKS')}
                         itemDestinationPagePath={appConfig.booksPage}
-                    />
+                    /> */}
                     <NavbarItem
                         itemText={t('D&D')}
                         itemDestinationPagePath={appConfig.dAndDPage}

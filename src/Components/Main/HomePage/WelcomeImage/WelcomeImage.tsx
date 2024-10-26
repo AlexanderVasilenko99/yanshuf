@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import yanImg from '../../../../Assets/Images/yan1.jpg';
 import "./WelcomeImage.scss";
 
 function WelcomeImage(): JSX.Element {
+    const { t } = useTranslation();
     return (
         // <div className="WelcomeImage"
         //     style={{
@@ -33,8 +35,8 @@ function WelcomeImage(): JSX.Element {
                     backgroundColor: "rgba(0, 0, 50, 0.3)",
                 }}>
 
-                <h1 className="heading">Yanshuf Books</h1>
-                <h2 className="sub-heading">sub-heading</h2>
+                <h1 className="heading">{t(`Yanshuf Books`)}</h1>
+                <h2 className="sub-heading">{t(`Unlock Secrets on Every Shelf`)}</h2>
                 {/* <h3>call to action</h3> */}
             </div>
         </div>
