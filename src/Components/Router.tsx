@@ -41,7 +41,9 @@ function Routing(): JSX.Element {
                 {/* <Route path="/*" element={<PageNotFound />}></Route> */}
 
 
-                <Route path={appConfig.gitBaseURL + appConfig.homePage} element={<Navigate to={appConfig.homePage} />} />
+                {/* <Route path={appConfig.gitBaseURL + appConfig.homePage} element={<Navigate to={appConfig.homePage} />} /> */}
+                <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<Navigate to={appConfig.homePage} />} />
+                <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<HomePage />} />
                 <Route path={appConfig.aboutPage} element={<About />} />
                 <Route path={appConfig.salesPage} element={<Sales />} />
                 <Route path={appConfig.dAndDPage} element={<DandD/>} />
