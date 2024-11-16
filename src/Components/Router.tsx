@@ -22,7 +22,7 @@ function Routing(): JSX.Element {
         <div className="Routing">
             <Routes>
                 <Route path="/yanshuf" element={<Navigate to={"/home"} />}></Route>
-                <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route> */}
+                <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route>
                 <Route path={appConfig.homePage} element={<HomePage />} />
                 {/* <Route path={appConfig.booksPage} element={<Books />} /> */}
                 {/* <Route path={appConfig.genresPage + "/:genreIdentifier/:bookIdentifier"} element={<BookPage />} /> */}
