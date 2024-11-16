@@ -21,8 +21,8 @@ function Routing(): JSX.Element {
     return (
         <div className="Routing">
             <Routes>
-                <Route path="/yanshuf" element={<Navigate to={"/home"} />}></Route>
-                <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route>
+                {/* <Route path="/yanshuf" element={<Navigate to={"/home"} />}></Route> */}
+                {/* <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route> */}
                 <Route path={appConfig.homePage} element={<HomePage />} />
                 {/* <Route path={appConfig.booksPage} element={<Books />} /> */}
                 {/* <Route path={appConfig.genresPage + "/:genreIdentifier/:bookIdentifier"} element={<BookPage />} /> */}
@@ -42,8 +42,8 @@ function Routing(): JSX.Element {
 
 
                 {/* <Route path={appConfig.gitBaseURL + appConfig.homePage} element={<Navigate to={appConfig.homePage} />} /> */}
-                <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<Navigate to={appConfig.homePage} />} />
-                <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<HomePage />} />
+                {/* <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<Navigate to={appConfig.homePage} />} />
+                <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<HomePage />} /> */}
                 <Route path={appConfig.aboutPage} element={<About />} />
                 <Route path={appConfig.salesPage} element={<Sales />} />
                 <Route path={appConfig.dAndDPage} element={<DandD/>} />
@@ -51,7 +51,8 @@ function Routing(): JSX.Element {
 
 
                 {/* Default Route */}
-                <Route path="/" element={<Navigate to={appConfig.homePage} />}></Route>
+                <Route path="/" element={<Navigate to={appConfig.homePage} replace />}></Route>
+                <Route path="*" element={<Navigate to={appConfig.homePage} replace />} />
             </Routes>
         </div>
     );
