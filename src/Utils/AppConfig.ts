@@ -1,4 +1,6 @@
 class AppConfig {
+    public readonly gitBaseURL = 'https://alexandervasilenko99.github.io/yanshuf';
+    
     public readonly homePage = '/home';
     public readonly booksPage = '/books';
     public readonly aboutPage = '/about';

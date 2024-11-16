@@ -34,10 +34,10 @@ function NavbarArea(): JSX.Element {
                         itemText={t('GALLERY')}
                         itemDestinationPagePath={appConfig.galleryPage}
                     />
-                    <NavbarItem
+                    {/* <NavbarItem
                         itemText={t('ARTICLES')}
                         itemDestinationPagePath={appConfig.articlesPage}
-                    />
+                    /> */}
                     <NavbarItem
                         itemText={t('SALES')}
                         itemDestinationPagePath={appConfig.salesPage}

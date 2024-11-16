@@ -22,25 +22,32 @@ function Routing(): JSX.Element {
         <div className="Routing">
             <Routes>
                 {/* Default Route */}
-                <Route path="/" element={<Navigate to={"/home"} />}></Route>
+                {/* <Route path="/" element={<Navigate to={"/home"} />}></Route>
                 <Route path="/yanshuf" element={<Navigate to={"/home"} />}></Route>
-                {/* <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route> */}
+                <Route path="/yanshuf/home" element={<Navigate to={"/home"} />}></Route> */}
                 <Route path={appConfig.homePage} element={<HomePage />} />
-                <Route path={appConfig.booksPage} element={<Books />} />
-                <Route path={appConfig.genresPage + "/:genreIdentifier/:bookIdentifier"} element={<BookPage />} />
-                <Route path={appConfig.authorsPage} element={<Authors />} />
-                <Route path={appConfig.authorsPage + "/:authorIdentifier"} element={<AuthorPage />} />
-                <Route path={appConfig.seriesPage} element={<Series />} />
-                <Route path={appConfig.seriesPage + "/:seriesIdentifier"} element={<SeriesPage />} />
-                <Route path={appConfig.genresPage} element={<Genres />} />
-                <Route path={appConfig.genresPage + "/:genreIdentifier"} element={<GenrePage />} />
+                {/* <Route path={appConfig.booksPage} element={<Books />} /> */}
+                {/* <Route path={appConfig.genresPage + "/:genreIdentifier/:bookIdentifier"} element={<BookPage />} /> */}
+                {/* <Route path={appConfig.authorsPage} element={<Authors />} /> */}
+                {/* <Route path={appConfig.authorsPage + "/:authorIdentifier"} element={<AuthorPage />} /> */}
+                {/* <Route path={appConfig.seriesPage} element={<Series />} /> */}
+                {/* <Route path={appConfig.seriesPage + "/:seriesIdentifier"} element={<SeriesPage />} /> */}
+                {/* <Route path={appConfig.genresPage} element={<Genres />} /> */}
+                {/* <Route path={appConfig.genresPage + "/:genreIdentifier"} element={<GenrePage />} /> */}
                 <Route path={appConfig.aboutPage} element={<About />} />
                 <Route path={appConfig.salesPage} element={<Sales />} />
-                <Route path={appConfig.picksOfTheMonthPage} element={<PicksOTM />} />
+                {/* <Route path={appConfig.picksOfTheMonthPage} element={<PicksOTM />} /> */}
                 <Route path={appConfig.dAndDPage} element={<DandD/>} />
-                <Route path={appConfig.articlesPage} element={<Articles />} />
+                {/* <Route path={appConfig.articlesPage} element={<Articles />} /> */}
                 <Route path={appConfig.galleryPage} element={<Gallery />} />
                 {/* <Route path="/*" element={<PageNotFound />}></Route> */}
+
+
+                <Route path={appConfig.gitBaseURL + appConfig.homePage} element={<Navigate to={appConfig.homePage} />} />
+                <Route path={appConfig.aboutPage} element={<About />} />
+                <Route path={appConfig.salesPage} element={<Sales />} />
+                <Route path={appConfig.dAndDPage} element={<DandD/>} />
+                <Route path={appConfig.galleryPage} element={<Gallery />} />
             </Routes>
         </div>
     );
