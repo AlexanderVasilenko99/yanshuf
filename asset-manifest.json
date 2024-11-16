@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "./static/css/main.aa59688a.css",
+    "main.js": "./static/js/main.0c51d306.js",
+    "static/media/yan1.jpg": "./static/media/yan1.021199044bfe7ad5ad40.jpg",
+    "static/media/yan5.jpg": "./static/media/yan5.a99236301498fca6067e.jpg",
+    "static/media/yan3.jpg": "./static/media/yan3.694fb8d646f222ea0239.jpg",
+    "static/media/yan9.jpg": "./static/media/yan9.71c97e0c31e832b78b10.jpg",
+    "static/media/yan8.jpg": "./static/media/yan8.bbecfaa5084efb9fb897.jpg",
+    "static/media/yan10.jpg": "./static/media/yan10.bc8ece0f204e6630316b.jpg",
+    "static/media/yan6.jpg": "./static/media/yan6.59ba544aed1a5dde138b.jpg",
+    "static/media/yan4.jpg": "./static/media/yan4.2ecc3c9d20a3606d91ee.jpg",
+    "static/media/yan2.jpg": "./static/media/yan2.2957f880ce4bea5fb477.jpg",
+    "static/media/yan7.jpg": "./static/media/yan7.9ad20b990ef56f6ac677.jpg",
+    "static/media/yan18.jpg": "./static/media/yan18.82d2ce02b4251eb314ed.jpg",
+    "static/media/yan14.jpg": "./static/media/yan14.45cf1c6875934fe74763.jpg",
+    "static/media/yan15.jpg": "./static/media/yan15.e1488aef61441dbabdcf.jpg",
+    "static/media/yan17.jpg": "./static/media/yan17.3b30757f3c6b737557a6.jpg",
+    "static/media/yan11.jpg": "./static/media/yan11.b7cc69e670926b54df1d.jpg",
+    "static/media/yan16.jpg": "./static/media/yan16.9b8bb64415a9e66931a4.jpg",
+    "static/media/yan22.jpg": "./static/media/yan22.6ef5b42228c24c370127.jpg",
+    "static/media/yan21.jpg": "./static/media/yan21.b3545151cccbf97751fd.jpg",
+    "static/media/yan12.jpg": "./static/media/yan12.4550a87bcbc8ca10fefb.jpg",
+    "static/media/yan20.jpg": "./static/media/yan20.206dfa9c4637c7379e3c.jpg",
+    "static/media/yan13.jpg": "./static/media/yan13.3c034e50bc77d8028c3a.jpg",
+    "index.html": "./index.html",
+    "main.aa59688a.css.map": "./static/css/main.aa59688a.css.map",
+    "main.0c51d306.js.map": "./static/js/main.0c51d306.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa59688a.css",
+    "static/js/main.0c51d306.js"
+  ]
+}
