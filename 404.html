@@ -7,6 +7,10 @@
             // Redirect to React routes when a 404 occurs
             var path = window.location.pathname.split('/');
             var redirectPath = '/' + path.slice(2).join('/');
+
+            console.log(path);
+            console.log(redirectPath);
+            
             window.location.replace('/yanshuf' + redirectPath);
         }
     </script>
