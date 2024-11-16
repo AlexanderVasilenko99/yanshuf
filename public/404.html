@@ -3,17 +3,10 @@
 
 <head>
     <script>
-        const basePath = '/yanshuf';
-        const fullPath = window.location.pathname;
-        
-        if (!fullPath.startsWith(basePath)) {
-          // Extract the part of the URL after '/yanshuf'
-          const relativePath = fullPath.split('/').slice(2).join('/');
-          
-          // Redirect to the correct path
-          window.location.replace(`${basePath}/${relativePath}`);
-        }
-      </script>
+        let redirectPath = window.location.pathname.replace('/yanshuf', '');
+        window.location.replace('/yanshuf/index.html' + '#' + redirectPath);
+        // later I can add a custom hook that updates the cookie of the exact location
+    </script>
 
 
     <meta charset="UTF-8">
