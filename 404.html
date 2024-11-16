@@ -3,17 +3,17 @@
 
 <head>
     <script>
-        if (!window.location.pathname.startsWith('/yanshuf')) {
-            // Redirect to React routes when a 404 occurs
-            var path = window.location.pathname.split('/');
-            var redirectPath = '/' + path.slice(2).join('/');
-
-            console.log(path);
-            console.log(redirectPath);
-            
-            window.location.replace('/yanshuf' + redirectPath);
+        const basePath = '/yanshuf';
+        const fullPath = window.location.pathname;
+        
+        if (!fullPath.startsWith(basePath)) {
+          // Extract the part of the URL after '/yanshuf'
+          const relativePath = fullPath.split('/').slice(2).join('/');
+          
+          // Redirect to the correct path
+          window.location.replace(`${basePath}/${relativePath}`);
         }
-    </script>
+      </script>
 
 
     <meta charset="UTF-8">
