@@ -29,7 +29,6 @@ i18n
 
 root.render(
   <BrowserRouter basename="/yanshuf">
-    {/* basename='/yanshuf' */}
     <ScrollToTop />
     {/* <Marquee /> */}
     < Navbar2 />
