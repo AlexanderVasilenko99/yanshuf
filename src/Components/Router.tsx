@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation, useParams } from "react-router-dom";
 import appConfig from "../Utils/AppConfig";
 import About from "./Main/About/About";
 import AuthorPage from "./Main/Authors/AuthorPage/AuthorPage";
@@ -16,8 +16,16 @@ import Articles from "./Main/Articles/Articles";
 import Gallery from "./Main/Gallery/Gallery";
 import DandD from "./Main/DandD/DandD";
 import Sales from "./Main/Sales/Sales";
+import { useEffect } from "react";
 
 function Routing(): JSX.Element {
+
+    let location = useLocation();
+
+    useEffect(() => {
+        sessionStorage.setItem("path", location.pathname);
+    }, [location]);
+
     return (
         <div className="Routing">
             <Routes>
@@ -35,7 +43,7 @@ function Routing(): JSX.Element {
                 <Route path={appConfig.aboutPage} element={<About />} />
                 <Route path={appConfig.salesPage} element={<Sales />} />
                 {/* <Route path={appConfig.picksOfTheMonthPage} element={<PicksOTM />} /> */}
-                <Route path={appConfig.dAndDPage} element={<DandD/>} />
+                <Route path={appConfig.dAndDPage} element={<DandD />} />
                 {/* <Route path={appConfig.articlesPage} element={<Articles />} /> */}
                 <Route path={appConfig.galleryPage} element={<Gallery />} />
                 {/* <Route path="/*" element={<PageNotFound />}></Route> */}
@@ -46,7 +54,7 @@ function Routing(): JSX.Element {
                 <Route path={"https://alexandervasilenko99.github.io/yanshuf/home"} element={<HomePage />} /> */}
                 <Route path={appConfig.aboutPage} element={<About />} />
                 <Route path={appConfig.salesPage} element={<Sales />} />
-                <Route path={appConfig.dAndDPage} element={<DandD/>} />
+                <Route path={appConfig.dAndDPage} element={<DandD />} />
                 <Route path={appConfig.galleryPage} element={<Gallery />} />
 
 
