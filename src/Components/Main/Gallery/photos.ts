@@ -160,12 +160,6 @@ const photos = [
         width: 1080,
         height: 720,
         alt: "yanshuf_books22",
-    },
-    {
-        asset: yan22,
-        width: 1080,
-        height: 720,
-        alt: "yanshuf_books22",
     }
 ].map(
     ({ asset, alt, width, height }) =>
