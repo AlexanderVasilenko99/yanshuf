@@ -12,17 +12,17 @@ function HomePage(): JSX.Element {
     const [newIn, setNewIn] = useState<BookModel[]>();
     const [picksOfTheMonth, setPicksOfTheMonth] = useState<BookModel[]>();
 
-    useEffect(() => {
-        bookServices.getPicksOfTheMonthByYearAndMonth(dateForPicksOfTheMonth.getFullYear(), dateForPicksOfTheMonth.getMonth() + 1)
-            .then((books: BookModel[]) => { setPicksOfTheMonth(books) })
-            .catch((err: any) => console.log(err.message));
-        bookServices.getBestsellers()
-            .then((books: BookModel[]) => { setBestsellers(books) })
-            .catch((err: any) => console.log(err.message));
-        bookServices.getNewIn()
-            .then((books: BookModel[]) => { setNewIn(books) })
-            .catch((err: any) => console.log(err.message));
-    }, []);
+    // useEffect(() => {
+    //     bookServices.getPicksOfTheMonthByYearAndMonth(dateForPicksOfTheMonth.getFullYear(), dateForPicksOfTheMonth.getMonth() + 1)
+    //         .then((books: BookModel[]) => { setPicksOfTheMonth(books) })
+    //         .catch((err: any) => console.log(err.message));
+    //     bookServices.getBestsellers()
+    //         .then((books: BookModel[]) => { setBestsellers(books) })
+    //         .catch((err: any) => console.log(err.message));
+    //     bookServices.getNewIn()
+    //         .then((books: BookModel[]) => { setNewIn(books) })
+    //         .catch((err: any) => console.log(err.message));
+    // }, []);
 
     return (
         <div className="HomePage">
