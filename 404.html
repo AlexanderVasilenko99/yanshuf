@@ -4,8 +4,10 @@
 <head>
     <script>
         let redirectPath = window.location.pathname.replace('/yanshuf', '');
+        console.log(redirectPath);
         window.location.replace('/yanshuf/index.html' + '#' + redirectPath);
         // later I can add a custom hook that updates the cookie of the exact location
+        // also set a cookie of displaying the navbar animation only once
     </script>
 
 
