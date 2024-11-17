@@ -75,7 +75,7 @@
         }
 
         a {
-            font-size: 1rem;
+            font-size: .8rem;
             height: 60px;
             display: flex;
             background-color: var(--primary-color);
@@ -107,7 +107,7 @@
 
             a {
                 &:nth-last-of-type(1){
-                    border-bottom: 2px solid var(--accent-color);
+                    border-bottom: 1px solid var(--accent-color);
                 }
             }
         }
