@@ -175,17 +175,24 @@
         .logistics {
             display: grid;
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr auto;
             border: 0;
 
             h5 {
                 margin: 0px 0px 1em;
+                &.hide-mobile{
+                    visibility: hidden;
+                }
             }
 
             hr {
                 display: inline-block;
                 border-color: var(--primary-color);
                 margin: 0px 0px 1em;
+
+                &.hide-mobile{
+                    display: none;
+                }
             }
 
             br:nth-of-type(even) {
@@ -201,6 +208,10 @@
                     text-align: center;
                     margin: 0px 0px 1em;
                     padding: 0px;
+                    a{
+                        display: inline-block;
+                        width: 100%;
+                    }
                 }
             }
         }

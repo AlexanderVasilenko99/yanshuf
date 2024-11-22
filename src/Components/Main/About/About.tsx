@@ -38,9 +38,9 @@ function About(): JSX.Element {
                 </div>
 
                 <div className="right-col">
-                    <hr />
-                    <h5>Get In Touch!</h5>
-                    <hr />
+                    <hr className="hide-mobile"/>
+                    <h5 className="hide-mobile">Get In Touch!</h5>
+                    <hr className="hide-mobile"/>
                     <p>
                         For general queries, orders and book searching please feel
                         free to reach us at any time!
