@@ -76,13 +76,16 @@
                 padding: 0px 60px;
                 box-sizing: border-box;
                 display: grid;
-                grid-template-columns: 1fr 15px 1fr;
+                grid-template-columns: 1fr 1fr;
+                gap: 0px 15px;
                 text-align: left;
 
                 input {
                     box-sizing: border-box;
                     padding: 5px;
                     width: 100%;
+                    color: var(--accent-color);
+                    font-size: .6rem;
                 }
             }
 
@@ -93,17 +96,113 @@
                 box-sizing: border-box;
                 width: 100%;
                 padding: 0px 60px;
+                margin-top: 10px;
 
                 textarea {
-                    height: 150px;
+                    min-height: 150px;
+                    color: var(--accent-color);
+                    font-size: .6rem;
+                    resize: vertical;
                 }
 
                 button {
+                    background-color: var(--primary-color);
                     margin: 30px auto;
-                    height: 35px;
-                    width: 90px;
+                    font-size: .6rem;
+                    padding: 8px 16px;
+                    border-radius: 8px;
+                    color: var(--secondary-color);
+                    // height: 35px;
+                    // width: 90px;
+                    transition: 200ms all;
+
+                    &:hover {
+                        cursor: pointer;
+                        scale: 1.05;
+                    }
                 }
             }
         }
     }
+}
+
+@media screen and (max-width:769px) {
+    .About {
+        p {
+            font-size: .8rem;
+            text-align: left;
+        }
+
+        .images {
+            grid-template-columns: 1fr;
+            column-gap: 0;
+            // grid-template-rows: 1fr 1fr;
+
+            img {
+                width: 100%;
+
+                &:nth-of-type(1) {
+                    display: none;
+                }
+
+                // margin: 1.5em 0;
+            }
+        }
+
+        .logistics {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            border: 2px solid var(--primary-color);
+
+            >* {
+                display: flex;
+                flex-direction: column;
+
+                p {
+                    font-size: .8rem;
+                    text-align: center;
+                    margin: 0px 0px 20px;
+                    padding: 0px 10px;
+
+                    a {
+                        // text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .write-to-us {
+
+            .write-us-form {
+
+                .means-of-contact {
+                    grid-template-columns: 1fr;
+                    padding: 0px;
+
+                    input {
+                        padding: 5px;
+
+                        &[type="text"] {
+                            order: -1;
+                        }
+                    }
+
+                    label {
+                        margin-top: 10px;
+
+                        &:nth-of-type(1) {
+                            order: -1;
+                            margin: 0;
+                        }
+                    }
+                }
+
+                .message {
+                    padding: 0px;
+                }
+            }
+        }
+    }
+
 }

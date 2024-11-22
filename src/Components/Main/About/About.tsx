@@ -60,14 +60,12 @@ function About(): JSX.Element {
                 <form className="write-us-form">
                     <div className="means-of-contact">
                         <label>Name</label>
-                        <div className="spacer"></div>
                         <label>Phone number</label>
                         <input type="text" />
-                        <div className="spacer"></div>
                         <input type="tel" />
                     </div>
                     <div className="message">
-                        <label>Content:</label>
+                        <label>Your message:</label>
                         <textarea />
                         <button>Send!</button>
                     </div>
