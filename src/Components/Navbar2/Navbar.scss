@@ -14,9 +14,11 @@
         align-items: center;
 
         img {
-            width: 35px;
+            box-sizing: border-box;
+            width: 60px;
+            height: 60px;
             cursor: pointer;
-            margin: 0px 15px;
+            padding: 10px;
         }
     }
 
@@ -106,7 +108,7 @@
             width: 100%;
 
             a {
-                &:nth-last-of-type(1){
+                &:nth-last-of-type(1) {
                     border-bottom: 1px solid var(--accent-color);
                 }
             }

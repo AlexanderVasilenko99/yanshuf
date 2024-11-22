@@ -5,7 +5,8 @@ import "./Navbar.scss";
 import NavbarItem from "./NavbarItem/NavbarItem";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
-import Hamburger from 'hamburger-react'
+import Hamburger from 'hamburger-react';
+import logo from "../../Assets/Images/logo.jpg";
 
 
 function NavbarArea(): JSX.Element {
@@ -15,7 +16,9 @@ function NavbarArea(): JSX.Element {
     return (
         <ul className="Navbar">
             <li className="logo-container mobile">
-                <NavLink to={appConfig.homePage}>{t('Logo')}</NavLink>
+                <NavLink to={appConfig.homePage}>
+                    <img src={logo} alt="logo" />
+                </NavLink>
             </li>
             <li onClick={() => setIsOpen(!isOpen)} className="mobile trigger">
             <Hamburger toggled={isOpen} />

@@ -8,24 +8,27 @@
     transition: all 0.5s;
 
     // a {
-        width: 100%;
-        height: 100%;
+    width: 100%;
+    height: 100%;
 
-        float: none;
-        padding: 0px 16px;
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        height: fit-content;
-        height: 100%;
-        width: 100%;
-        transition: all 0.5s;
-        color: var(--accent-color);
+    float: none;
+    padding: 0px 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    color: var(--accent-color);
 
-        &:hover {
-            background-color: var(--accent-color);
-            color: var(--primary-color);
-        }
+    &:hover,
+    &:focus,
+    &:active {
+        background-color: var(--accent-color);
+        color: var(--primary-color);
+    }
+
     // }
 
     // .NavbarItemDropdownContent {
@@ -42,7 +45,7 @@
 }
 
 @media screen and (max-width: 900px) {
-    .NavbarItem{
-       max-width: 100%;
+    .NavbarItem {
+        max-width: 100%;
     }
 }
