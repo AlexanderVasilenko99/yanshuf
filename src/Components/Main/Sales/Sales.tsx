@@ -1,20 +1,23 @@
 import { useTranslation } from 'react-i18next';
 import "./Sales.scss";
+import Sale from './Sale/Sale';
 
 function Sales(): JSX.Element {
     const { t } = useTranslation();
     return (
         <div className="Sales">
-
-            <h3>{t(`Ongoing sale on the books outside!`)}</h3>
-            <p>{t(`Best Sellers - each book for 20₪`)}
-                <br />
-                {t(`or`)}
-                <br /> 
-                {t(`10 books for 100₪`)}
-            </p>
-            {/* <h3>call to action</h3> */}
-
+            <h3>Ongoing Sales</h3>
+            <div className='sales-content'>
+                <div className="sale-container">
+                    <Sale content="Best Sellers - each book for 20₪" />
+                </div>
+                <div className="sale-container">
+                    <h3 className='spacer'>or</h3>
+                </div>
+                <div className="sale-container">
+                    <Sale content="10 books for 100₪" />
+                </div>
+            </div>
         </div>
     );
 }
